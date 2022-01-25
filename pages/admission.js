@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Banner from "../components/Admission/Banner";
 import Navbar from "../components/Navbar/Navbar";
+import ScrollView from "../components/ScrollView";
 import styles from "../styles/Home.module.css";
 
 export default function Admission() {
@@ -19,6 +20,7 @@ export default function Admission() {
         <p className="mt-4 text-sm ml-2">
           Home {">"} College {">"} MBA {">"} IIMA {">"} Admissions
         </p>
+        <ScrollView />
       </div>
     </>
   );
