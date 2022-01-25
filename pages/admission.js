@@ -4,7 +4,7 @@ import Banner from "../components/Admission/Banner";
 import Navbar from "../components/Navbar/Navbar";
 import styles from "../styles/Home.module.css";
 
-export default function Home() {
+export default function Admission() {
   return (
     <>
       <Head>
@@ -16,6 +16,9 @@ export default function Home() {
       <Navbar />
       <div className={styles.container}>
         <Banner />
+        <p className="mt-4 text-sm ml-2">
+          Home {">"} College {">"} MBA {">"} IIMA {">"} Admissions
+        </p>
       </div>
     </>
   );
