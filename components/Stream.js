@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Stream(){
     return(
-        <div className="m-6">
+        <div className="mx-12 my-6">
             <h1 className="my-2 mb-6 not-italic font-normal text-3xl leading-9 text-dark-500">Colleges Based on Streams</h1>
             <div className="flex flex-wrap items-center justify-between gap-16">
                 <div className="w-40 flex justify-center items-center flex-col">

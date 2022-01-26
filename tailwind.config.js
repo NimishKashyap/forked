@@ -16,13 +16,20 @@ module.exports = {
           500:"#D97559"
         },
         fadeWhite:{
-          500:"#FAFAFA"
+          500:"#FAFAFA",
+          200:"#F2F2F2"
         },
         borderColor:{
           500:"#C8C8C8"
         },
         borderColor2:{
           500:"#E1E1E1"
+        },
+        borderColor3:{
+          500:"#9092A9"
+        },
+        borderColor4:{
+          500:"#C9CBE2"
         }
       },
       backgroundColor:["active"]

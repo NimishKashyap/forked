@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Location(){
     return(
-        <div className="mx-6 my-12">
+        <div className="m-12">
         <div className="flex justify-between my-4">
         <h1 className="not-italic font-normal text-3xl leading-9 text-dark-500">Colleges Based on Location</h1>
         <div className="border flex items-center w-72 border-borderColor2-500">

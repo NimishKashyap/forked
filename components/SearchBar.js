@@ -4,7 +4,7 @@ import Link from "next/link"
 
 function SearchBar() {
     return(
-        <div className="mx-6 flex items-center justify-center -my-6">
+        <div className="mx-12 flex items-center justify-center -my-6">
         <div className="border border-borderColor w-4/6 box-border rounded bg-fadeWhite-500 flex items-center">
             <div className="mx-4 my-2"><Image src="/NavBar/search.svg" alt="search" width="15px" height="15px" /></div>
             
