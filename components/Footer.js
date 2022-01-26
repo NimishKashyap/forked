@@ -74,10 +74,10 @@ function Footer(){
                 </div>
             </div>
             </div>
-            <div className="flex gap-10 my-4 items-center">
+            <div className="flex gap-10 my-4 items-center justify-center sm:justify-start">
                     <p className="text-sm text-dark-500">2021 Skilzen, All rights reserved.</p>
-                    <p className="text-sm text-dark-500">Terms & Conditions</p>
-                    <p className="text-sm text-dark-500">Privacy Policy</p>
+                    <p className="hidden sm:block text-sm text-dark-500">Terms & Conditions</p>
+                    <p className="hidden sm:block text-sm text-dark-500">Privacy Policy</p>
             </div>
         </div>
     );
