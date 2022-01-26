@@ -1,8 +1,32 @@
 import React from "react";
 import CaretIcon from "../Icons/CaretIcon";
-import AdmissionOpenHeaderLogo from "./icons/AdmissionOpenHeaderLogo";
+import AdmissionOpenHeaderLogo from "../Admission/icons/AdmissionOpenHeaderLogo";
 
-function RelatedLinkCard({ header, programme }) {
+const details = [
+  {
+    img: "/assets/other.png",
+    header: "Food and Agribusiness Management",
+    programme: "Masters in Business Administration (MBA)",
+    about:
+      "IIM Ahmedabad courses are divided into eight categories, all in the post-graduation or doctoral level of study. All programmes have a management focus and invite applications across many disciplines, each having separate admission criteria. Six of these eight IIMA courses are taught in-person at the campus, and two programmes, namely ePGP in Management and ePGD in Advanced Business Analytics, follow remote instruction. IIM Ahmedabad courses are all designed to attract the sharpest and motivated individuals.",
+    curriculumOutline: [
+      {
+        year: 1,
+        curriculum: [
+          "Advanged Agricultural Management",
+          "Advanced Agricultural Management",
+          "Exercices on Advanced Agricultural Management",
+          "Advanced Agricultural Management",
+          "Advanced Agricultural Management",
+          "Advanced Agricultural Management",
+          "Advanced Agricultural Management",
+          "Advanced Agricultural Management",
+        ],
+      },
+    ],
+  },
+];
+function CourseLink({ header, programme }) {
   return (
     <header className="flex overflow-hidden border-[#eee] border-2 rounded-md shadow-md my-5 mx-5 relative">
       <img src={"/assets/other.png"} />
@@ -54,9 +78,9 @@ function RelatedLinkCard({ header, programme }) {
       <span className="absolute right-3 top-3">
         <img src="/assets/heartClicked.png" />
       </span>
-      <CaretIcon className={"absolute bottom-5 right-5"}/>
+      <CaretIcon className={"absolute bottom-5 right-5"} />
     </header>
   );
 }
 
-export default RelatedLinkCard;
+export default CourseLink;

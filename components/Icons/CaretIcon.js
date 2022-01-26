@@ -1,8 +1,9 @@
 import React from "react";
 
-function CaretIcon() {
+function CaretIcon({className}) {
   return (
     <svg
+        className={className}
       width="14"
       height="8"
       viewBox="0 0 14 8"
