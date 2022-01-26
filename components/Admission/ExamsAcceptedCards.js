@@ -50,7 +50,7 @@ function ExamsAcceptedCards() {
       </section>
       <h1 className="text-dark-500 text-3xl my-3">UGC - NET</h1>
       <ul className="flex justify-between">
-        <li classname="flex flex-col">
+        <li className="flex flex-col">
           <span classname="flex text-[#9092a9] items-center">
             <AdmissionOpenHeaderLogo /> <p classname="mx-2">Eligibility</p>
           </span>
