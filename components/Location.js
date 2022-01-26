@@ -3,10 +3,10 @@ import Image from "next/image";
 
 function Location(){
     return(
-        <div className="m-12">
-        <div className="flex justify-between my-4">
+        <div className="mx-4 sm:mx-12 my-12">
+        <div className="flex justify-between flex-col gap-4 lg:flex-row my-4">
         <h1 className="not-italic font-normal text-3xl leading-9 text-dark-500">Colleges Based on Location</h1>
-        <div className="border flex items-center w-72 border-borderColor2-500">
+        <div className="border flex items-center w-full lg:w-72 border-borderColor2-500">
         <div className="m-2">
         <Image src="/NavBar/search.svg" alt="search" width="15px" height="15px" 
         />
@@ -14,7 +14,7 @@ function Location(){
             <input type="text" placeholder="Search here..." className="flex-1 outline-0"/>
         </div>
         </div>
-        <div className="flex flex-wrap items-center justify-between gap-16">
+        <div className="grid xl:grid-cols-6 lg:grid-cols-5 sm:grid-cols-4 grid-cols-1 items-center justify-left gap-4">
             <div className="w-48 flex justify-center items-center flex-col">
                 <Image src="/location/1.svg" alt="stream" width="109px" height="95px"/>
                 <p className="text-lg font-normal text-dark-500">Kochi</p>

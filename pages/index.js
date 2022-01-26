@@ -22,7 +22,7 @@ export default function Home() {
       <Navbar />
       <Hero/>
       <SearchBar/>
-      <div className="mx-12 my-4">
+      <div className="mx-12 my-4 mt-8 lg:mt-4">
         <h2 className="text-base text-dark-900 font-normal leading-4">Home {">"} Colleges</h2>
       </div>
       <Stream />
