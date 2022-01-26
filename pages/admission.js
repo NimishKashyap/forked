@@ -1,8 +1,18 @@
 import Head from "next/head";
 import Image from "next/image";
+import AdmissionDetails from "../components/Admission/AdmissionDetails";
+import AdmissionOpen from "../components/Admission/AdmissionOpen";
 import Banner from "../components/Admission/Banner";
+import QuickUpdateView from "../components/Admission/QuickUpdateView";
+import RelatedLinkCard from "../components/Admission/RelatedLinkCard";
+import AdvertiseBanner from "../components/AdvertiseBanner";
+import FAQDropDown from "../components/FAQDropDown";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar/Navbar";
+import NewsCard from "../components/NewsCard";
+import Review from "../components/Review";
 import ScrollView from "../components/ScrollView";
+import TopCollege from "../components/TopCollege";
 import styles from "../styles/Home.module.css";
 
 export default function Admission() {
@@ -21,7 +31,73 @@ export default function Admission() {
           Home {">"} College {">"} MBA {">"} IIMA {">"} Admissions
         </p>
         <ScrollView />
+
+        <section className="mt-7">
+          <h1 className="mx-[3rem] my-6 text-[3rem] text-[#2B3A77]">
+            Admissions
+          </h1>
+          <h3 className="mx-[3rem] text-[2rem] text-[#404366]">
+            IIM Ahmedabad Quick Update
+          </h3>
+          <QuickUpdateView />
+        </section>
+        <section>
+          <h3 className="mx-[3rem] text-[2rem] text-[#404366] my-[2rem]">
+            Admissions Open
+          </h3>
+          <ul className="flex border-b-2 max-w-fit my-4 text-[#9092A9]">
+            <li className="mx-3">Bachelors</li>
+            <li className="mx-5">Masters</li>
+            <li className="mx-5">Certificate</li>
+            <li className="mx-5">Diploma</li>
+            <li className="mx-3">Ph. D</li>
+          </ul>
+          <AdmissionOpen />
+        </section>
+        <section>
+          <RelatedLinkCard
+            header={"Post Graduate Diploma in Management (PGDM)"}
+            programme={"Masters in Business Administration (MBA)"}
+          />
+          <RelatedLinkCard
+            header={"ePGD in Advanced Administration (MBA)"}
+            programme={"Masters in Business Administration (MBA)"}
+          />
+        </section>
       </div>
+      <AdvertiseBanner />
+      <div className={styles.container}>
+        <section>
+          <h1 className="text-dark-500 text-3xl mb-5">FAQs</h1>
+          <div className="flex justify-around h-[20rem] items-stretch">
+            <FAQDropDown />
+            <FAQDropDown />
+          </div>
+        </section>
+        <section>
+          <h1 className="text-dark-500 text-3xl my-5">Related News</h1>
+          <div className="flex justify-evenly">
+            {/* News Card */}
+            <NewsCard />
+            <NewsCard />
+            <NewsCard />
+          </div>
+        </section>
+        <section>
+          <h1 className="text-dark-500 text-3xl my-[3rem]">Reviews on IIMA</h1>
+          <Review />
+          <Review />
+          <Review />
+          <button className="border-primary-500 border-2 mx-5 my-5 px-5 py-2 rounded-md text-dark-500">
+            SEE MORE REVIEWS
+          </button>
+        </section>
+        <section>
+          <h1 className="text-dark-500 text-3xl my-[3rem]">Top MBA Colleges</h1>
+          <TopCollege />
+        </section>
+      </div>
+      <Footer />
     </>
   );
 }
