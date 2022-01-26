@@ -3,10 +3,11 @@ import Image from "next/image";
 import Link from "next/link"
 
 function Navbar() {
-  return <div className="flex justify-between mx-6 h-20 items-center border-2">
+  return (
+  <div className="w-full flex justify-between px-12 h-24 items-center">
       <div>
       <div className="flex flex-col ">
-          <Image src="/NavBar/logo.svg" alt="logo" width="175px" height="68px" />
+          <Image src="/NavBar/logo.svg" alt="logo" width="175px" height="62px" />
           </div>
       </div>
       <div>
@@ -42,7 +43,8 @@ function Navbar() {
              </span>
          </div>
       </div>
-  </div>;
+  </div>
+  );
 }
 
 export default Navbar;
