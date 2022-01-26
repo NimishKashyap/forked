@@ -1,5 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
 
 function Footer() {
   return (
