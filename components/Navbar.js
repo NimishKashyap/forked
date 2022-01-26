@@ -4,14 +4,22 @@ import Link from "next/link"
 
 function Navbar() {
   return (
-  <div className="w-full flex justify-between px-12 h-24 items-center">
+  <div className="w-full flex justify-between px-4 sm:px-12 py-1 items-center shadow">
       <div>
       <div className="flex flex-col ">
-          <Image src="/NavBar/logo.svg" alt="logo" width="175px" height="62px" />
+          <Image src="/NavBar/logo.svg" alt="logo" width="175px" height="52px" />
           </div>
       </div>
       <div>
-         <div className="flex items-center gap-10">
+      {/* responsive */}
+        <div className="flex items-center gap-6 xl:hidden">
+            <div><Image src="/NavBar/search.svg" alt="search" width="15px" height="16px" /></div>
+            <div><Image src="/NavBar/chat.svg" alt="chat" width="16px" height="16px" /></div>
+            <div><Image src="/NavBar/notify.svg" alt="notify" width="16px" height="18px" /></div>
+            <div><Image src="/NavBar/menu.svg" alt="menu" width="24px" height="16px" /></div>
+        </div>
+      {/* responsive */}
+         <div className="hidden xl:flex items-center gap-6">
          <span className="text-base text-dark-200 font-normal">
              <Link href="" >Home</Link>
              </span>

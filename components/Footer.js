@@ -3,10 +3,10 @@ import Image from "next/image";
 
 function Footer(){
     return(
-        <div className="px-12 flex flex-col bg-fadeWhite-200">
+        <div className="px-4 sm:px-12 flex flex-col bg-fadeWhite-200">
         <div className="flex justify-between gap-5 mt-12 border-b border-borderColor4-500">
-            <div className="flex gap-5 w-2/6 justify-between">
-                <div className="flex flex-col gap-2">
+            <div className="flex gap-5 md:w-3/5 lg:w-1/2 xl:w-2/6 justify-between">
+                <div className="hidden md:flex flex-col gap-2">
                     <h3 className="font-bold text-dark-500 text-base mb-4">Popular Fields</h3>
                     <p className="text-sm text-dark-500 font-normal">Computer Science/IT</p>
                     <p className="text-sm text-dark-500 font-normal">Electronics</p>
@@ -17,7 +17,7 @@ function Footer(){
                     <p className="text-sm text-dark-500 font-normal">Finance</p>
                     <p className="text-sm text-dark-500 font-normal">Humanities</p>
                 </div>
-                <div className="flex flex-col gap-2">
+                <div className="hidden md:flex flex-col gap-2">
                     <h3 className="font-bold text-dark-500 text-base mb-4">Popular Locations</h3>
                     <p className="text-sm text-dark-500 font-normal">Bangalore</p>
                     <p className="text-sm text-dark-500 font-normal">Delhi</p>
