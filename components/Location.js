@@ -14,7 +14,7 @@ function Location(){
             <input type="text" placeholder="Search here..." className="flex-1 outline-0"/>
         </div>
         </div>
-        <div className="grid xl:grid-cols-6 lg:grid-cols-5 sm:grid-cols-4 grid-cols-1 items-center justify-left gap-4">
+        <div className="grid xl:grid-cols-6 lg:grid-cols-5 sm:grid-cols-4 grid-cols-2 items-center justify-left gap-4">
             <div className="w-48 flex justify-center items-center flex-col">
                 <Image src="/location/1.svg" alt="stream" width="109px" height="95px"/>
                 <p className="text-lg font-normal text-dark-500">Kochi</p>
