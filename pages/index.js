@@ -1,8 +1,22 @@
+<<<<<<< HEAD
 import Head from "next/head";
 import Image from "next/image";
 import Banner from "../components/Admission/Banner";
 import Navbar from "../components/Navbar/Navbar";
 import styles from "../styles/Home.module.css";
+=======
+import Head from 'next/head'
+import Image from 'next/image'
+import styles from '../styles/Home.module.css'
+import Navbar from "../components/Navbar"
+import Hero from '../components/Hero'
+import SearchBar from '../components/SearchBar'
+import Stream from "../components/Stream";
+import Degree from "../components/Degree";
+import Location from "../components/Location";
+import Colleges from "../components/Colleges";
+import Footer from "../components/Footer";
+>>>>>>> f303b519fe47e027f93f2a3a2505d1a31e2db3a2
 
 export default function Home() {
   return (
@@ -14,9 +28,25 @@ export default function Home() {
       </Head>
 
       <Navbar />
+<<<<<<< HEAD
       <div className={styles.container}>
         <Banner />
       </div>
     </>
   );
 }
+=======
+      <Hero/>
+      <SearchBar/>
+      <div className="mx-12 my-4 mt-8 lg:mt-4">
+        <h2 className="text-base text-dark-900 font-normal leading-4">Home {">"} Colleges</h2>
+      </div>
+      <Stream />
+      <Degree />
+      <Location />
+      <Colleges />
+      <Footer />
+    </div>
+  )
+}
+>>>>>>> f303b519fe47e027f93f2a3a2505d1a31e2db3a2
