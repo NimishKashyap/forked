@@ -17,6 +17,12 @@ module.exports = {
         },
         fadeWhite:{
           500:"#FAFAFA"
+        },
+        borderColor:{
+          500:"#C8C8C8"
+        },
+        borderColor2:{
+          500:"#E1E1E1"
         }
       },
       backgroundColor:["active"]
@@ -28,5 +34,7 @@ module.exports = {
       '58': '3.625rem',
     }
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
 }

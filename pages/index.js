@@ -3,6 +3,11 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Navbar from "../components/Navbar"
 import Hero from '../components/Hero'
+import SearchBar from '../components/SearchBar'
+import Stream from "../components/Stream";
+import Degree from "../components/Degree";
+import Location from "../components/Location";
+import Colleges from "../components/Colleges";
 
 export default function Home() {
   return (
@@ -15,6 +20,14 @@ export default function Home() {
 
       <Navbar />
       <Hero/>
+      <SearchBar/>
+      <div className="mx-6 my-4">
+        <h2 className="text-base text-dark-900 font-normal leading-4">Home {">"} Colleges</h2>
+      </div>
+      <Stream />
+      <Degree />
+      <Location />
+      <Colleges />
     </div>
   )
 }
