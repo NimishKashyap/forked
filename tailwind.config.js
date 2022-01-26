@@ -14,9 +14,18 @@ module.exports = {
         },
         primary:{
           500:"#D97559"
+        },
+        fadeWhite:{
+          500:"#FAFAFA"
         }
       },
       backgroundColor:["active"]
+    },
+    height: {
+      '28': '28rem',
+    },
+    lineHeight: {
+      '58': '3.625rem',
     }
   },
   plugins: [],
