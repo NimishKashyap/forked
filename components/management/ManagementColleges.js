@@ -57,7 +57,7 @@ function ManagementColleges() {
           <button className="text-gray-500 uppercase text-sm border border-primary-500 rounded box-border py-2 px-6">Reset All</button>
           </div>
           <div className="my-10 gap-6 md:grid-cols-2 grid xl:grid-cols-3">
-            <div className="w-96 shadow-md mb-6 rounded">
+            <div className="w-80 md:w-96 shadow-md mb-6 rounded">
               <div>
                 <Image src="/management/srm.png" alt="srm" width="600px" height="140px" />
               </div>
@@ -107,7 +107,7 @@ function ManagementColleges() {
                 </div>
               </div>
           </div>
-            <div className="w-96 shadow-md mb-6 rounded">
+            <div className="w-80 md:w-96 shadow-md mb-6 rounded">
               <div>
                 <Image src="/management/srm.png" alt="srm" width="600px" height="140px" />
               </div>
@@ -157,7 +157,7 @@ function ManagementColleges() {
                 </div>
               </div>
           </div>
-            <div className="w-96 shadow-md mb-6 rounded">
+            <div className="w-80 md:w-96 shadow-md mb-6 rounded">
               <div>
                 <Image src="/management/srm.png" alt="srm" width="600px" height="140px" />
               </div>
@@ -207,7 +207,7 @@ function ManagementColleges() {
                 </div>
               </div>
           </div>
-            <div className="w-96 shadow-md mb-6 rounded">
+            <div className="w-80 md:w-96 shadow-md mb-6 rounded">
               <div>
                 <Image src="/management/srm.png" alt="srm" width="600px" height="140px" />
               </div>
@@ -257,7 +257,7 @@ function ManagementColleges() {
                 </div>
               </div>
           </div>
-            <div className="w-96 shadow-md mb-6 rounded">
+            <div className="w-80 md:w-96 shadow-md mb-6 rounded">
               <div>
                 <Image src="/management/srm.png" alt="srm" width="600px" height="140px" />
               </div>
@@ -307,7 +307,7 @@ function ManagementColleges() {
                 </div>
               </div>
           </div>
-            <div className="w-96 shadow-md mb-6 rounded">
+            <div className="w-80 md:w-96 shadow-md mb-6 rounded">
               <div>
                 <Image src="/management/srm.png" alt="srm" width="600px" height="140px" />
               </div>
@@ -357,7 +357,7 @@ function ManagementColleges() {
                 </div>
               </div>
           </div>
-            <div className="w-96 shadow-md mb-6 rounded">
+            <div className="w-80 md:w-96 shadow-md mb-6 rounded">
               <div>
                 <Image src="/management/srm.png" alt="srm" width="600px" height="140px" />
               </div>
@@ -407,7 +407,7 @@ function ManagementColleges() {
                 </div>
               </div>
           </div>
-            <div className="w-96 shadow-md mb-6 rounded">
+            <div className="w-80 md:w-96 shadow-md mb-6 rounded">
               <div>
                 <Image src="/management/srm.png" alt="srm" width="600px" height="140px" />
               </div>
@@ -457,7 +457,7 @@ function ManagementColleges() {
                 </div>
               </div>
           </div>
-            <div className="w-96 shadow-md mb-6 rounded">
+            <div className="w-80 md:w-96 shadow-md mb-6 rounded">
               <div>
                 <Image src="/management/srm.png" alt="srm" width="600px" height="140px" />
               </div>
@@ -507,7 +507,7 @@ function ManagementColleges() {
                 </div>
               </div>
           </div>
-            <div className="w-96 shadow-md mb-6 rounded">
+            <div className="w-80 md:w-96 shadow-md mb-6 rounded">
               <div>
                 <Image src="/management/srm.png" alt="srm" width="600px" height="140px" />
               </div>
@@ -557,7 +557,7 @@ function ManagementColleges() {
                 </div>
               </div>
           </div>
-            <div className="w-96 shadow-md mb-6 rounded">
+            <div className="w-80 md:w-96 shadow-md mb-6 rounded">
               <div>
                 <Image src="/management/srm.png" alt="srm" width="600px" height="140px" />
               </div>
@@ -607,7 +607,7 @@ function ManagementColleges() {
                 </div>
               </div>
           </div>
-            <div className="w-96 shadow-md mb-6 rounded">
+            <div className="w-80 md:w-96 shadow-md mb-6 rounded">
               <div>
                 <Image src="/management/srm.png" alt="srm" width="600px" height="140px" />
               </div>
