@@ -56,33 +56,33 @@ function Review() {
         interactions.
       </p>
       <div className="flex flex-grow my-5 items-center">
-        <div className="grid grid-cols-3 items-start my-3 text-xs flex-grow md:text-sm">
-          <span className="flex justify-between md:mx-5">
+        <div className="grid grid-cols-3 items-start my-3 text-[11px] flex-grow md:text-sm">
+          <span className="flex items-center justify-between md:mx-5">
             <p>Placements</p>
-            <img className="object-contain" src="/assets/Icon.png" />
+            <img className="object-contain md:h-10" src="/ReviewIcons/Amazing.svg" />
           </span>
-          <span className="flex justify-between md:mx-5 ml-[4px]">
+          <span className="flex items-center justify-between md:mx-5 ml-[4px]">
             <p>Course</p>
-            <img className="object-contain" src="/assets/Icon2.png" />
+            <img className="object-contain md:h-10" src="/ReviewIcons/Amazing.svg" />
           </span>
-          <span className="flex justify-between md:mx-5">
+          <span className="flex items-center justify-between md:mx-5">
             <p>Hostel</p>
-            <img className="object-contain" src="/assets/Icon.png" />
+            <img className="object-contain md:h-10 mr-[-6px]" src="/ReviewIcons/Satisfactory.svg" />
           </span>
-          <span className="flex justify-between md:mx-5">
+          <span className="flex items-center justify-between md:mx-5">
             <p>Faculty</p>
-            <img className="object-contain" src="/assets/Icon.png" />
+            <img className="object-contain md:h-10" src="/ReviewIcons/Amazing.svg" />
           </span>
-          <span className="flex justify-between md:mx-5 md:mr-6 ml-[4px]">
+          <span className="flex items-center justify-between md:mx-5 ml-[4px]">
             <p>College</p>
             <img
-              className="object-contain mr-1 md:mr-0"
-              src="/assets/Icon.png"
+              className="object-contain md:mr-0 md:h-10"
+              src="/ReviewIcons/Amazing.svg"
             />
           </span>
-          <span className="flex justify-between md:mx-5">
+          <span className="flex items-center justify-between md:mx-5">
             <p>Campus Life</p>
-            <img className="object-contain" src="/assets/Icon.png" />
+            <img className="object-contain md:h-10" src="/ReviewIcons/Amazing.svg" />
           </span>
         </div>
         <div className="hidden md:top-[-1rem] md:relative md:flex items-center text-dark-200 text-medium">
