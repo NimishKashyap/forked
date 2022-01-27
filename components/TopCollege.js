@@ -33,6 +33,26 @@ const collegeItems = [
     header: "Indian Institute of Management (IIM)",
     location: "Kashipur",
   },
+  {
+    imgSrc: "/assets/image.png",
+    header: "Indian Institute of Management (IIM)",
+    location: "Kashipur",
+  },
+  {
+    imgSrc: "/assets/image.png",
+    header: "Indian Institute of Management (IIM)",
+    location: "Kashipur",
+  },
+  {
+    imgSrc: "/assets/image.png",
+    header: "Indian Institute of Management (IIM)",
+    location: "Kashipur",
+  },
+  {
+    imgSrc: "/assets/image.png",
+    header: "Indian Institute of Management (IIM)",
+    location: "Kashipur",
+  },
 ];
 
 function TopCollegeItems({ imgSrc, header, location }) {
@@ -55,70 +75,70 @@ function TopCollegeItems({ imgSrc, header, location }) {
 }
 
 function TopCollege() {
-  const handleScroll = (no) =>{
+  const handleScroll = (no) => {
     const scrollAmount = 150;
     const scrollContainer = document.querySelector(".scrollbar");
-    scrollContainer.scrollBy(no*scrollAmount,0); 
-  }
-  
-  return (
-      <div className="flex justify-center md:my-5 relative ">
-        <div className="flex overflow-x-auto scroll-smooth scrollbar">
-          {collegeItems.map((item, index) => (
-            <TopCollegeItems
-              key={index}
-              imgSrc={item.imgSrc}
-              header={item.header}
-              location={item.location}
-            />
-          ))}
+    scrollContainer.scrollBy(no * scrollAmount, 0);
+  };
 
-          <div className="flex absolute right-0 md:right-10 top-[-3rem]">
-            <svg
-              onClick={()=>handleScroll(-1)}
-              width="38"
-              height="38"
-              viewBox="0 0 38 38"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="19" cy="19" r="18" stroke="#9092A9" strokeWidth="2" />
-              <path
-                d="M21 13L15 19L21 25"
-                stroke="#9092A9"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-            <svg
-              width="38"
-              onClick={()=>handleScroll(1)}
-              className="mx-2"
-              height="38"
-              viewBox="0 0 38 38"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                cx="19"
-                cy="19"
-                r="18"
-                transform="rotate(180 19 19)"
-                stroke="#404366"
-                strokeWidth="2"
-              />
-              <path
-                d="M17 25L23 19L17 13"
-                stroke="#404366"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </div>
+  return (
+    <div className="flex justify-center md:my-5 relative ">
+      <div className="flex overflow-x-auto scroll-smooth scrollbar">
+        {collegeItems.map((item, index) => (
+          <TopCollegeItems
+            key={index}
+            imgSrc={item.imgSrc}
+            header={item.header}
+            location={item.location}
+          />
+        ))}
+
+        <div className="flex absolute right-0 md:right-10 top-[-3rem]">
+          <svg
+            onClick={() => handleScroll(-1)}
+            width="38"
+            height="38"
+            viewBox="0 0 38 38"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="19" cy="19" r="18" stroke="#9092A9" strokeWidth="2" />
+            <path
+              d="M21 13L15 19L21 25"
+              stroke="#9092A9"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+          <svg
+            width="38"
+            onClick={() => handleScroll(1)}
+            className="mx-2"
+            height="38"
+            viewBox="0 0 38 38"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="19"
+              cy="19"
+              r="18"
+              transform="rotate(180 19 19)"
+              stroke="#404366"
+              strokeWidth="2"
+            />
+            <path
+              d="M17 25L23 19L17 13"
+              stroke="#404366"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
         </div>
       </div>
+    </div>
   );
 }
 
