@@ -33,19 +33,19 @@ export default function Admission() {
         <ScrollView />
 
         <section className="mt-7">
-          <h1 className="md:mx-[3rem] my-6 text-base md:text-[3rem] text-[#2B3A77]">
+          <h1 className="my-[3rem] text-base md:text-[3rem] text-[#2B3A77]">
             Admissions
           </h1>
-          <h3 className="md:mx-[3rem] text-base md:mt-[3rem] font-bold md:font-normal md:text-[2rem] text-[#404366]">
+          <h3 className="text-base md:my-[2.5rem] font-bold md:font-normal md:text-[2rem] text-[#404366]">
             IIM Ahmedabad Quick Update
           </h3>
           <QuickUpdateView />
         </section>
         <section>
-          <h3 className="md:mx-[3rem] text-[2rem] text-dark-500 my-[2rem]">
+          <h3 className="text-[2rem] text-dark-500 my-[1rem]">
             Admissions Open
           </h3>
-          <ul className="flex border-b-2 max-w-fit my-4 text-dark-200 text-xs sm:text-sm md:text-base flex-nowrap overflow-x-scroll">
+          <ul className="flex border-b-2 max-w-fit mb-6 text-dark-200 text-xs sm:text-sm md:text-base flex-nowrap overflow-x-hidden">
             <li className="ml-1">Bachelors</li>
             <li className="ml-5">Masters</li>
             <li className="ml-5">Certificate</li>

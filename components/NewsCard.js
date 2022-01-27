@@ -64,7 +64,7 @@ function NewsCard({ index, setIndex }) {
     setIndex((index + 1) % 3);
   };
   return (
-    <div className="flex justify-evenly relative w-auto overflow-x-scroll py-5">
+    <div className="flex justify-start relative w-auto overflow-x-scroll py-20">
       {newsItems.map((item, index) => (
         <div
           key={index}

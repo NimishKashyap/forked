@@ -30,23 +30,29 @@ function Review() {
       </p>
       <div className="flex justify-around my-5">
         <div className="grid grid-cols-3 space-x-2 items-start space-y-1 my-3 text-xs md:text-base">
-          <span className="flex justify-between items-start md:mx-5">
-            <p>Placements</p> <img className="object-contain" src="/assets/Icon.png" />
+          <span className="flex justify-between md:mx-5">
+            <p>Placements</p>{" "}
+            <img className="object-contain" src="/assets/Icon.png" />
           </span>
           <span className="flex justify-between md:mx-5">
-            <p>Course</p> <img className="object-contain" src="/assets/Icon2.png" />
+            <p>Course</p>{" "}
+            <img className="object-contain" src="/assets/Icon2.png" />
           </span>
           <span className="flex justify-between md:mx-5">
-            <p>Hostel</p> <img className="object-contain" src="/assets/Icon.png" />
+            <p>Hostel</p>{" "}
+            <img className="object-contain" src="/assets/Icon.png" />
           </span>
           <span className="flex justify-between md:mx-5">
-            <p>Faculty</p> <img className="object-contain" src="/assets/Icon.png" />
+            <p>Faculty</p>{" "}
+            <img className="object-contain" src="/assets/Icon.png" />
           </span>
           <span className="flex justify-between md:mx-5">
-            <p>College</p> <img className="object-contain" src="/assets/Icon.png" />
+            <p>College</p>{" "}
+            <img className="object-contain" src="/assets/Icon.png" />
           </span>
           <span className="flex justify-between md:mx-5">
-            <p>Campus Life</p> <img className="object-contain" src="/assets/Icon.png" />
+            <p>Campus Life</p>{" "}
+            <img className="object-contain" src="/assets/Icon.png" />
           </span>
         </div>
         <div className="absolute top-0 right-0 md:relative flex items-center text-dark-200 text-medium">
@@ -55,14 +61,18 @@ function Review() {
               className="h-[20px] md:h-1/2 md:w-1/2 object-contain md:mx-5"
               src="assets/Vector.png"
             ></img>
-            <span className="absolute text-xs md:text-base md:bottom-[-2rem] md:left-[1.5rem]">100</span>
+            <span className="absolute text-xs md:text-base md:bottom-[-2rem] md:left-[1.5rem]">
+              100
+            </span>
           </span>
           <span className="relative">
             <img
               className="h-[20px] md:h-1/2 md:w-1/2 object-contain mx-5 "
               src="assets/Vector1.png"
             ></img>
-            <span className="absolute text-xs md:text-base right-7 md:bottom-[-2rem] md:left-[1.8rem]">0</span>
+            <span className="absolute text-xs md:text-base right-7 md:bottom-[-2rem] md:left-[1.8rem]">
+              0
+            </span>
           </span>
         </div>
       </div>
