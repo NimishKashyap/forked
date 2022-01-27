@@ -60,40 +60,42 @@ const newsItems = [
 ];
 
 function NewsCard({ index, setIndex }) {
-  const handleNext = () => {
-    setIndex((index + 1) % 3);
+  const handleScroll = (no) => {
+    const scrollAmount = 300;
+    const scrollContainer = document.querySelector(".scrollbarnews");
+    scrollContainer.scrollBy(no * scrollAmount, 0);
   };
   return (
     <div className="relative">
-      <div className="flex justify-start w-auto overflow-x-scroll py-5">
+      <div className="flex justify-start w-auto overflow-x-scroll py-5 scrollbarnews scroll-smooth">
         {newsItems.map((item, index) => (
           <div
             key={index}
-            className=" flex flex-col mx-5 rounded-md shadow-md min-w-[270px] max-h-[420px] md:min-w-[33.33%] md:max-w-[33.33%]"
+            className=" flex flex-col mx-5 rounded-md shadow-md min-w-[240px] max-h-[250px] overflow-hidden text-ellipsis md:min-w-[30%] md:max-w-[50%] md:max-h-[400px]"
           >
             <img src={item.img} alt="news image" className="object-contain" />
             <div className="p-5">
-              <h1 className="text-dark-500 font-medium text-sm md:text-xl mb-5">
+              <h1 className="text-dark-500 font-medium text-sm lg:text-xl md:text-base mb-5">
                 {item.header}
               </h1>
               <div className="flex justify-between text-dark-700">
-                <p className="text-[11px] md:text-base">
+                <p className="text-[10px] md:text-[10px] lg:text-[11px] md:text-base">
                   {item.date} {"  "}
                   {item.readMin}
                 </p>
-                <p className="text-[11px] md:text-base ">Source: {item.source}</p>
+                <p className="text-[10px] md:text-[10px] lg:text-[11px] md:text-base ">
+                  Source: {item.source}
+                </p>
               </div>
             </div>
           </div>
         ))}
       </div>
-      <div
-        onClick={handleNext}
-        className="hidden md:flex absolute top-[-2rem] right-0 hover:animate-pulse hover:cursor-pointer"
-      >
+      <div className="hidden md:flex absolute top-[-2rem] right-0 hover:animate-pulse hover:cursor-pointer">
         <svg
           width="38"
           height="38"
+          onClick={() => handleScroll(-1)}
           viewBox="0 0 38 38"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -109,6 +111,7 @@ function NewsCard({ index, setIndex }) {
         </svg>
         <svg
           width="38"
+          onClick={() => handleScroll(1)}
           className="mx-2"
           height="38"
           viewBox="0 0 38 38"

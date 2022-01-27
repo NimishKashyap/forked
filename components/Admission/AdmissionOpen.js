@@ -121,14 +121,14 @@ function AdmissionOpen() {
               src="/assets/step2.png"
               step={"Step 2"}
               details={
-                "Personal Interviews (PI) from among candidates who have applied for the programme and have a valid CAT score and satisfy the eligibility criteria for the programme."
+                "Candidates will be short-listed for Group Discussion (GD) and have to be in a group of all the selected candidates."
               }
             />
             <ProcessCard
               src="/assets/step3.png"
               step={"Step 3"}
               details={
-                "Personal Interviews (PI) from among candidates who have applied for the programme and have a valid CAT score and satisfy the eligibility criteria for the programme."
+                "Candidates will be short-listed for Group Discussion (GD) and have to be in a group of all the selected candidates."
               }
             />
           </div>

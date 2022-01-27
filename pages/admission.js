@@ -4,6 +4,7 @@ import AdmissionOpen from "../components/Admission/AdmissionOpen";
 import Banner from "../components/Admission/Banner";
 import QuickUpdateView from "../components/Admission/QuickUpdateView";
 import RelatedLinkCard from "../components/Admission/RelatedLinkCard";
+import AdmissionOpenSwitch from "../components/AdmissionOpenSwitch";
 import AdvertiseBanner from "../components/AdvertiseBanner";
 import FAQDropDown from "../components/FAQDropDown";
 import Footer from "../components/Footer";
@@ -45,13 +46,7 @@ export default function Admission() {
           <h3 className="text-[2rem] text-dark-500 my-[1rem]">
             Admissions Open
           </h3>
-          <ul className="flex border-b-2 max-w-fit mb-6 text-dark-200 text-xs sm:text-sm md:text-base flex-nowrap overflow-x-hidden">
-            <li className="ml-1">Bachelors</li>
-            <li className="ml-5">Masters</li>
-            <li className="ml-5">Certificate</li>
-            <li className="ml-5">Diploma</li>
-            <li className="ml-5 mr-1">Ph. D</li>
-          </ul>
+          <AdmissionOpenSwitch />
           <AdmissionOpen />
         </section>
         <section>
@@ -79,7 +74,7 @@ export default function Admission() {
       <section className="mx-5 md:mx-[4rem]">
         <h1 className="text-dark-500 mx-5 text-xl md:text-3xl mt-5 md:my-[3rem]">
           Reviews on IIMA
-        </h1> 
+        </h1>
         <Review />
         <Review />
         <Review />

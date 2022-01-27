@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React from "react";
+import ProcessCard from "./Admission/ProcessCard";
 
 const collegeItems = [
   {
@@ -54,9 +55,15 @@ function TopCollegeItems({ imgSrc, header, location }) {
 }
 
 function TopCollege() {
+  const handleScroll = (no) =>{
+    const scrollAmount = 150;
+    const scrollContainer = document.querySelector(".scrollbar");
+    scrollContainer.scrollBy(no*scrollAmount,0); 
+  }
+  
   return (
       <div className="flex justify-center md:my-5 relative ">
-        <div className="flex overflow-x-auto scroll-smooth">
+        <div className="flex overflow-x-auto scroll-smooth scrollbar">
           {collegeItems.map((item, index) => (
             <TopCollegeItems
               key={index}
@@ -68,6 +75,7 @@ function TopCollege() {
 
           <div className="flex absolute right-0 md:right-10 top-[-3rem]">
             <svg
+              onClick={()=>handleScroll(-1)}
               width="38"
               height="38"
               viewBox="0 0 38 38"
@@ -85,6 +93,7 @@ function TopCollege() {
             </svg>
             <svg
               width="38"
+              onClick={()=>handleScroll(1)}
               className="mx-2"
               height="38"
               viewBox="0 0 38 38"
