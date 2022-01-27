@@ -74,11 +74,11 @@ function TopCollege() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="19" cy="19" r="18" stroke="#9092A9" stroke-width="2" />
+            <circle cx="19" cy="19" r="18" stroke="#9092A9" strokeWidth="2" />
             <path
               d="M21 13L15 19L21 25"
               stroke="#9092A9"
-              stroke-width="2"
+              strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
             />

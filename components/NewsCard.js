@@ -65,13 +65,12 @@ function NewsCard({ index, setIndex }) {
   };
   return (
     <div className="flex justify-evenly relative w-auto overflow-x-scroll py-5">
-      {newsItems.map((item) => (
-        <div className="flex flex-col mx-5 rounded-md shadow-md min-w-[300px] max-h-[360px] md:min-w-[33.33%] md:max-w-[33.33%] transition transition-transform:">
-          <img
-            src={item.img}
-            alt="news image"
-            className="object-contain"
-          />
+      {newsItems.map((item, index) => (
+        <div
+          key={index}
+          className="flex flex-col mx-5 rounded-md shadow-md min-w-[300px] max-h-[360px] md:min-w-[33.33%] md:max-w-[33.33%] transition transition-transform:"
+        >
+          <img src={item.img} alt="news image" className="object-contain" />
           <div className="p-5">
             <h1 className="text-dark-500 font-medium text-xl mb-5">
               {item.header}
@@ -98,13 +97,13 @@ function NewsCard({ index, setIndex }) {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <circle cx="19" cy="19" r="18" stroke="#9092A9" stroke-width="2" />
+          <circle cx="19" cy="19" r="18" stroke="#9092A9" strokeWidth="2" />
           <path
             d="M21 13L15 19L21 25"
             stroke="#9092A9"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
         <svg
@@ -121,14 +120,14 @@ function NewsCard({ index, setIndex }) {
             r="18"
             transform="rotate(180 19 19)"
             stroke="#404366"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <path
             d="M17 25L23 19L17 13"
             stroke="#404366"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
       </div>
