@@ -18,7 +18,7 @@ function DocumentsRequired() {
         </li>
         <li className="text-primary-500">
           <p className="text-dark-500">
-            Bachelor's Degree (Official/Provisional)
+            Bachelor&apos;s Degree (Official/Provisional)
           </p>
         </li>
         <li className="text-primary-500">

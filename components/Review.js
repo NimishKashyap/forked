@@ -9,7 +9,7 @@ function Review() {
           <h1 className="text-dark-500">John Doe | PGPM (Alumni 2009)</h1>
           <span className="text-dark-200">99/99/9999 &#8226; Edited</span>
           <p className="mt-5 text-[#2b3a77] text-medium">
-            "Life at IIMA is worth all the hardships."
+            &quot;Life at IIMA is worth all the hardships.&quot;
           </p>
         </div>
         <div className="hidden md:flex mx-5">
