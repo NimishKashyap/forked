@@ -64,31 +64,32 @@ function NewsCard({ index, setIndex }) {
     setIndex((index + 1) % 3);
   };
   return (
-    <div className="flex justify-start relative w-auto overflow-x-scroll py-5">
-      {newsItems.map((item, index) => (
-        <div
-          key={index}
-          className=" flex flex-col mx-5 rounded-md shadow-md min-w-[300px] max-h-[420px] md:min-w-[33.33%] md:max-w-[33.33%]"
-        >
-          <img src={item.img} alt="news image" className="object-contain" />
-          <div className="p-5">
-            <h1 className="text-dark-500 font-medium text-xl mb-5">
-              {item.header}
-            </h1>
-            <div className="flex justify-between text-dark-700">
-              <p>
-                {item.date} {"  "}
-                {item.readMin}
-              </p>
-              <p>Source: {item.source}</p>
+    <div className="relative">
+      <div className="flex justify-start w-auto overflow-x-scroll py-5">
+        {newsItems.map((item, index) => (
+          <div
+            key={index}
+            className=" flex flex-col mx-5 rounded-md shadow-md min-w-[270px] max-h-[420px] md:min-w-[33.33%] md:max-w-[33.33%]"
+          >
+            <img src={item.img} alt="news image" className="object-contain" />
+            <div className="p-5">
+              <h1 className="text-dark-500 font-medium text-sm md:text-xl mb-5">
+                {item.header}
+              </h1>
+              <div className="flex justify-between text-dark-700">
+                <p className="text-[11px] md:text-base">
+                  {item.date} {"  "}
+                  {item.readMin}
+                </p>
+                <p className="text-[11px] md:text-base ">Source: {item.source}</p>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
-
+        ))}
+      </div>
       <div
         onClick={handleNext}
-        className="hidden md:flex absolute right-10 top-[-3rem] hover:animate-pulse hover:cursor-pointer"
+        className="hidden md:flex absolute top-[-2rem] right-0 hover:animate-pulse hover:cursor-pointer"
       >
         <svg
           width="38"

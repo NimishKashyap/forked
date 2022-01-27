@@ -77,9 +77,9 @@ export default function Admission() {
         </section>
       </div>
       <section className="mx-5 md:mx-[4rem]">
-        <h1 className="text-dark-500 mx-5 text-xl md:text-3xl my-5 md:my-[3rem]">
+        <h1 className="text-dark-500 mx-5 text-xl md:text-3xl mt-5 md:my-[3rem]">
           Reviews on IIMA
-        </h1>
+        </h1> 
         <Review />
         <Review />
         <Review />
@@ -89,7 +89,7 @@ export default function Admission() {
       </section>
       <div className="px-[2rem]">
         <section>
-          <h1 className="text-dark-500 text-xl md:text-3xl my-[3rem]">
+          <h1 className="text-dark-500 text-xl md:text-3xl mx-5 my-[3rem]">
             Top MBA Colleges
           </h1>
           <TopCollege />

@@ -28,47 +28,47 @@ function AdmissionOpen() {
             </h1>
           </div>
           <ul className="grid grid-cols-3 md:flex justify-between mx-2 p-2 md:mx-10 lg:justify-around text-xs lg:text-base">
-            <li className="flex flex-col">
+            <li className="flex flex-col my-1">
               <span className="flex text-[#9092A9]">
                 <AdmissionOpenHeaderLogo />{" "}
                 <p className="mx-2"> Program Type</p>
               </span>
-              <span className="ml-7 text-[#404366]">Part Time</span>
+              <span className="ml-5 text-[#404366]">Part Time</span>
             </li>
-            <li className="flex flex-col">
+            <li className="flex flex-col my-1">
               <span className="flex text-[#9092A9]">
                 <AdmissionOpenHeaderLogo />{" "}
                 <p className="mx-2"> Program Type</p>
               </span>
-              <span className="ml-7 text-[#404366]">Part Time</span>
+              <span className="ml-5 text-[#404366]">Part Time</span>
             </li>
-            <li className="flex flex-col">
+            <li className="flex flex-col my-1">
               <span className="flex text-[#9092A9]">
                 <AdmissionOpenHeaderLogo />{" "}
                 <p className="mx-2"> Program Type</p>
               </span>
-              <span className="ml-7 text-[#404366]">Part Time</span>
+              <span className="ml-5 text-[#404366]">Part Time</span>
             </li>
-            <li className="flex flex-col">
+            <li className="flex flex-col my-1">
               <span className="flex text-[#9092A9]">
                 <AdmissionOpenHeaderLogo />{" "}
                 <p className="mx-2"> Program Type</p>
               </span>
-              <span className="ml-7 text-[#404366]">Part Time</span>
+              <span className="ml-5 text-[#404366]">Part Time</span>
             </li>
-            <li className="flex flex-col">
+            <li className="flex flex-col my-1">
               <span className="flex text-[#9092A9]">
                 <AdmissionOpenHeaderLogo />{" "}
                 <p className="mx-2"> Program Type</p>
               </span>
-              <span className="ml-7 text-[#404366]">Part Time</span>
+              <span className="ml-5 text-[#404366]">Part Time</span>
             </li>
-            <li className="flex flex-col">
+            <li className="flex flex-col my-1">
               <span className="flex text-[#9092A9]">
                 <AdmissionOpenHeaderLogo />{" "}
                 <p className="mx-2"> Program Type</p>
               </span>
-              <span className="ml-7 text-[#404366]">Part Time</span>
+              <span className="ml-5 text-[#404366]">Part Time</span>
             </li>
           </ul>
         </div>
