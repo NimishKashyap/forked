@@ -17,7 +17,7 @@ function AdmissionOpen() {
   return (
     <div className="border-2 rounded-xl mb-5 overflow-hidden">
       <header className="flex flex-col md:flex-row overflow-hidden relative">
-        <img src={"/assets/admissionPhoto.png"} />
+        <img className="h-[200px] object-cover md:h-auto" src={"/assets/admissionPhoto.png"} />
         <div className="flex flex-col justify-between w-full my-5 mt-6">
           <div className="mx-5 md:mx-[4rem]">
             <h3 className="text-sm lg:text-2xl mx-1 text-dark-500">
@@ -27,7 +27,7 @@ function AdmissionOpen() {
               Food and Agribusiness Management
             </h1>
           </div>
-          <ul className="grid grid-cols-3 md:flex justify-between mx-10 lg:justify-around text-xs lg:text-base">
+          <ul className="grid grid-cols-3 md:flex justify-between mx-2 p-2 md:mx-10 lg:justify-around text-xs lg:text-base">
             <li className="flex flex-col">
               <span className="flex text-[#9092A9]">
                 <AdmissionOpenHeaderLogo />{" "}
@@ -144,7 +144,7 @@ function AdmissionOpen() {
           <SeatReservation />
         </section>
         <section>
-          <h1 className="text-3xl text-dark-500 mt-[3rem] mx-6">
+          <h1 className="text-xl md:text-3xl text-dark-500 mt-5 md:mt-[3rem] mx-6">
             Application Procedure
           </h1>
           <StepCarousel />

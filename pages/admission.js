@@ -62,30 +62,36 @@ export default function Admission() {
       <AdvertiseBanner />
       <div className={styles.container}>
         <section>
-          <h1 className="text-dark-500 text-3xl mb-5">FAQs</h1>
-          <div className="flex justify-around h-[20rem] items-stretch">
+          <h1 className="text-dark-500 text-lg md:text-3xl mb-5">FAQs</h1>
+          <div className="flex flex-col md:flex-row justify-around md:h-[20rem] items-stretch">
             <FAQDropDown />
             <FAQDropDown />
           </div>
         </section>
         <section>
-          <h1 className="text-dark-500 text-3xl my-5">Related News</h1>
+          <h1 className="text-dark-500 text-lg md:text-3xl my-5">
+            Related News
+          </h1>
           <div>
             {/* News Card */}
             <NewsCard index={index} setIndex={setIndex} />
           </div>
         </section>
+      </div>
+      <section>
+        <h1 className="text-dark-500 mx-5 text-xl md:text-3xl my-5 md:my-[3rem]">
+          Reviews on IIMA
+        </h1>
+        <Review />
+        <Review />
+        <Review />
+        <button className="border-primary-500 border-2 mx-5 my-5 px-5 py-2 rounded-md text-dark-500">
+          SEE MORE REVIEWS
+        </button>
+      </section>
+      <div className="px-[2rem]">
         <section>
-          <h1 className="text-dark-500 text-3xl my-[3rem]">Reviews on IIMA</h1>
-          <Review />
-          <Review />
-          <Review />
-          <button className="border-primary-500 border-2 mx-5 my-5 px-5 py-2 rounded-md text-dark-500">
-            SEE MORE REVIEWS
-          </button>
-        </section>
-        <section>
-          <h1 className="text-dark-500 text-3xl my-[3rem]">Top MBA Colleges</h1>
+          <h1 className="text-dark-500 text-xl md:text-3xl my-[3rem]">Top MBA Colleges</h1>
           <TopCollege />
         </section>
       </div>

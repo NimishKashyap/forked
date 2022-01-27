@@ -64,67 +64,32 @@ function NewsCard({ index, setIndex }) {
     setIndex((index + 1) % 3);
   };
   return (
-    <div className="flex justify-evenly relative w-full">
-      <div className="flex flex-col mx-5 rounded-md shadow-md min-w-[33.33%] max-w-[33.33%] transition transition-transform:">
-        <img
-          src={newsItems[index].img}
-          alt="news image"
-          className="object-contain"
-        />
-        <div className="p-5">
-          <h1 className="text-dark-500 font-medium text-xl mb-5">
-            {newsItems[index].header}
-          </h1>
-          <div className="flex justify-between text-dark-700">
-            <p>
-              {newsItems[index].date} {"  "}
-              {newsItems[index].readMin}
-            </p>
-            <p>Source: {newsItems[index].source}</p>
+    <div className="flex justify-evenly relative w-auto overflow-x-scroll py-5">
+      {newsItems.map((item) => (
+        <div className="flex flex-col mx-5 rounded-md shadow-md min-w-[300px] max-h-[360px] md:min-w-[33.33%] md:max-w-[33.33%] transition transition-transform:">
+          <img
+            src={item.img}
+            alt="news image"
+            className="object-contain"
+          />
+          <div className="p-5">
+            <h1 className="text-dark-500 font-medium text-xl mb-5">
+              {item.header}
+            </h1>
+            <div className="flex justify-between text-dark-700">
+              <p>
+                {item.date} {"  "}
+                {item.readMin}
+              </p>
+              <p>Source: {item.source}</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="flex flex-col mx-5 rounded-md shadow-md min-w-[33.33%] max-w-[33.33%]">
-        <img
-          src={newsItems[index + 1].img}
-          alt="news image"
-          className="object-cover"
-        />
-        <div className="p-5">
-          <h1 className="text-dark-500 font-medium text-xl mb-5">
-            {newsItems[index + 1].header}
-          </h1>
-          <div className="flex justify-between text-dark-700">
-            <p>
-              {newsItems[index + 1].date} {"  "}
-              {newsItems[index + 1].readMin}
-            </p>
-            <p>Source: {newsItems[index + 1].source}</p>
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-col mx-5 rounded-md shadow-md min-w-[33.33%] max-w-[33.33%]">
-        <img
-          src={newsItems[index + 2].img}
-          alt="news image"
-          className="object-cover"
-        />
-        <div className="p-5">
-          <h1 className="text-dark-500 font-medium text-xl mb-5">
-            {newsItems[index + 2].header}
-          </h1>
-          <div className="flex justify-between text-dark-700">
-            <p>
-              {newsItems[index + 2].date} {"  "}
-              {newsItems[index + 2].readMin}
-            </p>
-            <p>Source: {newsItems[index + 2].source}</p>
-          </div>
-        </div>
-      </div>
+      ))}
+
       <div
         onClick={handleNext}
-        className="flex absolute right-10 top-[-3rem] hover:animate-pulse hover:cursor-pointer"
+        className="hidden md:flex absolute right-10 top-[-3rem] hover:animate-pulse hover:cursor-pointer"
       >
         <svg
           width="38"

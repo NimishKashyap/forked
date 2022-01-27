@@ -2,14 +2,14 @@ import React from "react";
 
 function StepCarousel() {
   return (
-    <div className="mx-[5rem] my-6">
-      <h1 className="text-[#ffbf00] text-5xl">Step 1</h1>
-      <p className="text-lg mt-5">
+    <div className="mx-5 md:mx-[5rem] my-6">
+      <h1 className="text-[#ffbf00] text-2xl md:text-5xl">Step 1</h1>
+      <p className="text-sm md:text-lg mt-5 mb-auto md:mb-5">
         Candidates an register for any of the three rounds as per convenienece.
       </p>
       <div className="h-[20rem] my-5 rounded-lg bg-[#c4c4c4] relative">
         {/* Carousel Content Here */}
-        <div className="flex absolute right-3 top-[-3rem]">
+        <div className="hidden md:flex absolute right-3 top-[-3rem]">
           <svg
           
             width="38"

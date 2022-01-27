@@ -3,7 +3,7 @@ import AdmissionOpenHeaderLogo from "./icons/AdmissionOpenHeaderLogo";
 
 function ExamsAcceptedCards() {
   return (
-    <div className="w-[300px] md:w-[600px] lg:w-1/4 mx-5 bg-[#fafafa] shadow-md p-5 rounded-lg">
+    <div className="min-w-[200px] md:w-[600px] lg:w-1/4 mx-5 bg-[#fafafa] shadow-md p-5 rounded-lg">
       <header className="flex justify-between items-center">
         <p className="flex items-center">
           <svg
@@ -36,7 +36,7 @@ function ExamsAcceptedCards() {
       <section className="flex items-center">
         <svg
           width="30"
-          className="w-[20px] md:w-auto"
+          className="w-[16px] md:w-auto"
           height="36"
           viewBox="0 0 19 16"
           fill="none"
@@ -54,24 +54,24 @@ function ExamsAcceptedCards() {
       <h1 className="text-dark-500 text-base font-medium md:text-3xl my-2 md:my-3">
         UGC - NET
       </h1>
-      <ul className="flex justify-between text-xs md:text-base">
+      <ul className="flex justify-between text-[8px] md:text-base">
         <li className="flex flex-col">
           <span className="flex text-[#9092a9] items-center">
-            <AdmissionOpenHeaderLogo className="w-[20px] md:w-auto" />{" "}
+            <AdmissionOpenHeaderLogo className="w-[16px] mr-[3px] md:w-auto" />{" "}
             <p classname="mx-2">Eligibility</p>
           </span>
           <span className=" text-dark-200">X- XII</span>
         </li>
         <li classname="flex flex-col">
           <span className="flex text-[#9092a9]">
-            <AdmissionOpenHeaderLogo className="w-[20px] md:w-auto" />{" "}
+            <AdmissionOpenHeaderLogo className="w-[16px] mr-[3px] md:w-auto" />{" "}
             <p classname="mx-2"> Deadline</p>
           </span>
           <span className="text-dark-200">99.99.99</span>
         </li>
         <li className="flex flex-col">
           <span className="flex text-[#9092a9]">
-            <AdmissionOpenHeaderLogo className="w-[20px] md:w-auto" />{" "}
+            <AdmissionOpenHeaderLogo className="w-[16px] mr-[3px] md:w-auto" />{" "}
             <p classname="mx-2">Fees</p>
           </span>
           <span className="text-dark-200">$99,999</span>

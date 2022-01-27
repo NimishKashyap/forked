@@ -9,11 +9,11 @@ function BannerContent() {
         <span className="text-base font-medium md:text-[2rem] md:font-bold ">
           Indian Institues of Management Ahmedabad
         </span>
-        <span className="absolute bottom-[-1.20rem] left-[1rem] md:bottom-[-3rem] md:left-0 text-xs font-medium md:text-xl hover:underline hover:cursor-pointer">
+        <span className="absolute bottom-[-1.20rem] left-[7px] md:bottom-[-3rem] md:left-0 text-xs font-medium md:text-xl hover:underline hover:cursor-pointer">
           Estd. in 1947
         </span>
 
-        <span className="absolute md:bottom-[-3rem] flex items-center bottom-[-1.5rem] right-[1rem] md:right-[10rem] text-xs md:text-xl hover:underline hover:cursor-pointer">
+        <span className="absolute md:bottom-[-3rem] flex items-center bottom-[-1.5rem] right-[10px] md:right-[10rem] text-xs md:text-xl hover:underline hover:cursor-pointer">
           <svg
             width="30"
             height="30"
@@ -36,7 +36,7 @@ function BannerContent() {
               stroke-linejoin="round"
             />
           </svg>
-          Ahmedabad, Gujrat
+          <p>Ahmedabad, Gujrat</p>
         </span>
       </h1>
     </div>
