@@ -5,13 +5,15 @@ import HeartIcon from "./icons/HeartIcon";
 
 function Banner() {
   return (
-    <div className="bg-hero-pattern flex bg-cover h-72 bg-no-repeat mt-24 rounded-xl relative">
+    <div className="box-content bg-hero-pattern flex flex-col justify-between py-[3rem] h-2/3 md:h-60 md:justify-start items-center md:flex-row bg-cover bg-no-repeat md:mt-16 rounded-xl relative">
       <BannerContent />
-      <div className="flex items-center absolute right-5 bottom-5">
+      <div className="flex w-full justify-center items-baseline md:w-auto md:absolute right-5 bottom-5 md:mr-[2rem]">
         <Button>APPLY NOW</Button>
         <Button>FOLLOW</Button>
-        <HeartIcon />
       </div>
+      <span className="absolute top-3 right-3 md:top-auto md:bottom-6 md:right-3">
+        <HeartIcon />
+      </span>
     </div>
   );
 }

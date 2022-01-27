@@ -3,17 +3,17 @@ import CollegeLogo from "./icons/CollegeLogo";
 
 function BannerContent() {
   return (
-    <div className="ml-24 flex items-center justify-start">
+    <div className="md:ml-24 flex items-center justify-start">
       <CollegeLogo />
       <h1 className="text-white ml-5 relative">
-        <span className="text-[2rem] font-bold ">
+        <span className="text-base font-medium md:text-[2rem] md:font-bold ">
           Indian Institues of Management Ahmedabad
         </span>
-        <span className="absolute bottom-[-3rem] left-0 text-2xl hover:underline hover:cursor-pointer">
+        <span className="absolute bottom-[-1.20rem] left-[1rem] md:bottom-[-3rem] md:left-0 text-xs font-medium md:text-xl hover:underline hover:cursor-pointer">
           Estd. in 1947
         </span>
 
-        <span className="absolute bottom-[-3rem] flex items-center right-[10rem] text-2xl hover:underline hover:cursor-pointer">
+        <span className="absolute md:bottom-[-3rem] flex items-center bottom-[-1.5rem] right-[1rem] md:right-[10rem] text-xs md:text-xl hover:underline hover:cursor-pointer">
           <svg
             width="30"
             height="30"

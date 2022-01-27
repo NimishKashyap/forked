@@ -36,7 +36,7 @@ const collegeItems = [
 
 function TopCollegeItems({ imgSrc, header, location }) {
   return (
-    <div className="relative flex flex-col border-2 lg:max-w-[90%] max-w-[80%] rounded-md pb-4 mx-5 my-5 min-w-[16%]">
+    <div className="relative flex flex-col border-2 lg:max-w-[90%] max-w-[80%] w-56 rounded-md pb-4 mx-5 my-5 min-w-[16%]">
       <img className="absolute right-2 top-2" src={"/assets/heartIcon.svg"} />
       <img className="object-cover" src={imgSrc} />
       <h1 className="w-2/3 my-2 font-medium xl:text-xl px-4 md:text-md lg:text-lg sm:text-sm xs:text-xs">
@@ -57,8 +57,9 @@ function TopCollege() {
   return (
     <div className="flex justify-center my-5 relative">
       <div className="flex overflow-x-auto scroll-smooth">
-        {collegeItems.map((item) => (
+        {collegeItems.map((item, index) => (
           <TopCollegeItems
+            key={index}
             imgSrc={item.imgSrc}
             header={item.header}
             location={item.location}

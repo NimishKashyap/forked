@@ -2,8 +2,8 @@ import React from "react";
 
 function AdmissionDetails() {
   return (
-    <div className="my-[3rem] mx-5 text-[#404366]">
-      <div className="flex mx-5">
+    <div className="my-5 md:my-[3rem] mx-5 text-[#404366]">
+      <div className="flex flex-col md:flex-row mx-5">
         <ul className="flex flex-col items-center w-1/4">
           <span className="text-[#9092A9] text-lg">15%</span>
           <span className="text-xl">Scheduled Caste</span>

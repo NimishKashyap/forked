@@ -3,9 +3,9 @@ import AdmissionOpenHeaderLogo from "./icons/AdmissionOpenHeaderLogo";
 
 function ExamsAcceptedCards() {
   return (
-    <div className="w-1/4 mx-5 bg-[#fafafa] shadow-md p-5 rounded-lg">
+    <div className="w-[300px] md:w-[600px] lg:w-1/4 mx-5 bg-[#fafafa] shadow-md p-5 rounded-lg">
       <header className="flex justify-between items-center">
-        <p>
+        <p className="flex items-center">
           <svg
             width="6"
             height="6"
@@ -15,7 +15,7 @@ function ExamsAcceptedCards() {
           >
             <circle cx="3" cy="3" r="3" fill="#80CE43" />
           </svg>
-          <span>Open</span>
+          <p className="ml-2 text-xs md:text-base">Open</p>
         </p>
         <svg
           className="text-dark-500"
@@ -36,6 +36,7 @@ function ExamsAcceptedCards() {
       <section className="flex items-center">
         <svg
           width="30"
+          className="w-[20px] md:w-auto"
           height="36"
           viewBox="0 0 19 16"
           fill="none"
@@ -46,27 +47,34 @@ function ExamsAcceptedCards() {
             fill="#9092A9"
           />
         </svg>
-        <span className="text-dark-200 mx-3">Education</span>
+        <span className="text-dark-200 mx-3 text-xs md:text-base">
+          Education
+        </span>
       </section>
-      <h1 className="text-dark-500 text-3xl my-3">UGC - NET</h1>
-      <ul className="flex justify-between">
+      <h1 className="text-dark-500 text-base font-medium md:text-3xl my-2 md:my-3">
+        UGC - NET
+      </h1>
+      <ul className="flex justify-between text-xs md:text-base">
         <li className="flex flex-col">
-          <span classname="flex text-[#9092a9] items-center">
-            <AdmissionOpenHeaderLogo /> <p classname="mx-2">Eligibility</p>
+          <span className="flex text-[#9092a9] items-center">
+            <AdmissionOpenHeaderLogo className="w-[20px] md:w-auto" />{" "}
+            <p classname="mx-2">Eligibility</p>
           </span>
-          <span classname=" text-dark-200">X- XII</span>
+          <span className=" text-dark-200">X- XII</span>
         </li>
         <li classname="flex flex-col">
-          <span classname="flex text-[#9092a9]">
-            <AdmissionOpenHeaderLogo /> <p classname="mx-2"> Deadline</p>
+          <span className="flex text-[#9092a9]">
+            <AdmissionOpenHeaderLogo className="w-[20px] md:w-auto" />{" "}
+            <p classname="mx-2"> Deadline</p>
           </span>
-          <span classname="text-dark-200">99.99.99</span>
+          <span className="text-dark-200">99.99.99</span>
         </li>
-        <li classname="flex flex-col">
-          <span classname="flex text-[#9092a9]">
-            <AdmissionOpenHeaderLogo /> <p classname="mx-2">Fees</p>
+        <li className="flex flex-col">
+          <span className="flex text-[#9092a9]">
+            <AdmissionOpenHeaderLogo className="w-[20px] md:w-auto" />{" "}
+            <p classname="mx-2">Fees</p>
           </span>
-          <span classname="text-dark-200">$99,999</span>
+          <span className="text-dark-200">$99,999</span>
         </li>
       </ul>
     </div>

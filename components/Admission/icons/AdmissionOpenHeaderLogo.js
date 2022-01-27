@@ -1,9 +1,9 @@
 import React from "react";
 
-function AdmissionOpenHeaderLogo() {
+function AdmissionOpenHeaderLogo({ className }) {
   return (
     <svg
-      className="h-5"
+      className={className ? `${className}` : `h-5`}
       width="19"
       height="16"
       viewBox="0 0 19 16"
