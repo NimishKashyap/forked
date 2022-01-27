@@ -2,7 +2,7 @@ import React from "react";
 
 function DocumentsRequired() {
   return (
-    <div className="w-full md:my-5 md:w-1/2 border-2 mx-5 my-2 p-5 rounded-md max-h-[300px] md:max-h-min overflow-scroll">
+    <div className="w-full md:my-5 md:w-1/2 border-2 mx-5 my-2 p-5 rounded-md max-h-[300px] md:max-h-min overflow-scroll md:overflow-hidden">
       <h1 className="text-2xl text-dark-500 mb-5 underline underline-offset-4">
         Documents Required
       </h1>
