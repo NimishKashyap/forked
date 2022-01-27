@@ -3,9 +3,10 @@
   min-height: 100vh;
   min-width: 100vw;
   margin-top: 4rem;
+  overflow-x: hidden;
 }
-@media only screen and (max-width:765px){
-  .container{
+@media only screen and (max-width: 765px) {
+  .container {
     padding: 0 2rem;
     min-height: auto;
   }

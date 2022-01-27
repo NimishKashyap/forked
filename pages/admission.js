@@ -72,13 +72,11 @@ export default function Admission() {
           <h1 className="text-dark-500 text-lg md:text-3xl my-5">
             Related News
           </h1>
-          <div>
-            {/* News Card */}
-            <NewsCard index={index} setIndex={setIndex} />
-          </div>
+          {/* News Card */}
+          <NewsCard index={index} setIndex={setIndex} />
         </section>
       </div>
-      <section>
+      <section className="mx-5 md:mx-[4rem]">
         <h1 className="text-dark-500 mx-5 text-xl md:text-3xl my-5 md:my-[3rem]">
           Reviews on IIMA
         </h1>
@@ -91,7 +89,9 @@ export default function Admission() {
       </section>
       <div className="px-[2rem]">
         <section>
-          <h1 className="text-dark-500 text-xl md:text-3xl my-[3rem]">Top MBA Colleges</h1>
+          <h1 className="text-dark-500 text-xl md:text-3xl my-[3rem]">
+            Top MBA Colleges
+          </h1>
           <TopCollege />
         </section>
       </div>

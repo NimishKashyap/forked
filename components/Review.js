@@ -2,8 +2,8 @@ import React from "react";
 
 function Review() {
   return (
-    <div className="flex flex-col md:w-2/3 p-5 border-b-2 relative">
-      <header className="flex justify- my-5 ">
+    <div className="flex flex-col lg:w-2/3 p-5 border-b-2 relative">
+      <header className="flex my-5 ">
         <img className="h-full mr-5 w-[5rem]" src="/assets/profile.png" />
         <div>
           <h1 className="text-dark-500">John Doe | PGPM (Alumni 2009)</h1>
@@ -28,34 +28,34 @@ function Review() {
         like academic performance, work experience and performance in these
         interactions.
       </p>
-      <div className="flex justify-around my-5">
-        <div className="grid grid-cols-3 space-x-2 items-start space-y-1 my-3 text-xs md:text-base">
+      <div className="flex justify-between my-5 items-center">
+        <div className="grid grid-cols-3 items-start my-3 text-xs md:text-sm flex-grow">
           <span className="flex justify-between md:mx-5">
-            <p>Placements</p>{" "}
+            <p>Placements</p>
             <img className="object-contain" src="/assets/Icon.png" />
           </span>
           <span className="flex justify-between md:mx-5">
-            <p>Course</p>{" "}
+            <p>Course</p>
             <img className="object-contain" src="/assets/Icon2.png" />
           </span>
           <span className="flex justify-between md:mx-5">
-            <p>Hostel</p>{" "}
+            <p>Hostel</p>
             <img className="object-contain" src="/assets/Icon.png" />
           </span>
           <span className="flex justify-between md:mx-5">
-            <p>Faculty</p>{" "}
+            <p>Faculty</p>
+            <img className="object-contain" src="/assets/Icon.png" />
+          </span>
+          <span className="flex justify-between md:mx-5 md:mr-6">
+            <p>College</p>
             <img className="object-contain" src="/assets/Icon.png" />
           </span>
           <span className="flex justify-between md:mx-5">
-            <p>College</p>{" "}
-            <img className="object-contain" src="/assets/Icon.png" />
-          </span>
-          <span className="flex justify-between md:mx-5">
-            <p>Campus Life</p>{" "}
+            <p>Campus Life</p>
             <img className="object-contain" src="/assets/Icon.png" />
           </span>
         </div>
-        <div className="absolute top-0 right-0 md:relative flex items-center text-dark-200 text-medium">
+        <div className="absolute top-[1rem] right-0 md:top-[-1rem] md:relative flex items-center text-dark-200 text-medium">
           <span className="relative">
             <img
               className="h-[20px] md:h-1/2 md:w-1/2 object-contain md:mx-5"

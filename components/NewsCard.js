@@ -64,11 +64,11 @@ function NewsCard({ index, setIndex }) {
     setIndex((index + 1) % 3);
   };
   return (
-    <div className="flex justify-start relative w-auto overflow-x-scroll py-20">
+    <div className="flex justify-start relative w-auto overflow-x-scroll py-5">
       {newsItems.map((item, index) => (
         <div
           key={index}
-          className="flex flex-col mx-5 rounded-md shadow-md min-w-[300px] max-h-[360px] md:min-w-[33.33%] md:max-w-[33.33%] transition transition-transform:"
+          className=" flex flex-col mx-5 rounded-md shadow-md min-w-[300px] max-h-[420px] md:min-w-[33.33%] md:max-w-[33.33%]"
         >
           <img src={item.img} alt="news image" className="object-contain" />
           <div className="p-5">
