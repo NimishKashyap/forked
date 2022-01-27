@@ -30,6 +30,9 @@ module.exports = {
         },
         borderColor4:{
           500:"#C9CBE2"
+        },
+        gray:{
+          500:"#818181"
         }
       },
       backgroundColor:["active"]
