@@ -12,7 +12,7 @@ function YearDropDown({ course }) {
   return (
     <div className="mx-5 my-5 relative">
       <span>
-        <p
+        <div
           onClick={() => setShow(!show)}
           className="text-dark-500 max-w-[150px] flex items-center justify-between relative p-2 shadow-sm"
         >
@@ -46,7 +46,7 @@ function YearDropDown({ course }) {
               ))}
             </ul>
           </div>
-        </p>
+        </div>
       </span>
     </div>
   );

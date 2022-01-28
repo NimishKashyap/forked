@@ -40,7 +40,7 @@ function courses() {
           SEE MORE REVIEWS
         </button>
       </section>
-      <main className={styles.container}>
+      <main className={styles.secondContainer}>
         <section>
           <section>
             <h1 className="text-dark-500 text-3xl my-[3rem]">

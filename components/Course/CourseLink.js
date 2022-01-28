@@ -260,8 +260,8 @@ function CourseLink() {
   }, []);
   return (
     <div className="border-2 rounded-md shadow-md mb-5 ">
-      {details.map((card) => (
-        <>
+      {details.map((card, index) => (
+        <React.Fragment key={index}>
           <header className="flex flex-col md:flex-row overflow-hidden relative">
             <img className="h-[150px] md:h-auto object-cover" src={card.img} />
             <div className="flex flex-col justify-between w-full my-5 mt-6 md:mr-[6rem]">
@@ -337,7 +337,7 @@ function CourseLink() {
               <CourseSwitch course={card} hostel={hostelDetails}/>
             </section>
           </div>
-        </>
+        </React.Fragment>
       ))}
     </div>
   );

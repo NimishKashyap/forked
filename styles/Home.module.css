@@ -4,6 +4,9 @@
   max-width: 100vw;
   overflow-x: hidden;
 }
+.second-container{
+  min-height: auto;
+}
 @media only screen and (max-width: 765px) {
   .container {
     padding: 0 1rem;

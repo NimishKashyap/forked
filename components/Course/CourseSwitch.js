@@ -236,7 +236,7 @@ function CourseSwitch({ course, hostel }) {
           </div>
           {course.courseFee.map((item, index) => {
             return (
-              <>
+              <React.Fragment key={index}>
                 <div className="col-span-2 flex flex-col ml-5 border-b-2">
                   <h1>{Object.keys(item)[0]}</h1>
                 </div>
@@ -252,7 +252,7 @@ function CourseSwitch({ course, hostel }) {
                 <div className="col-span-2 flex flex-col items-end mr-5 border-b-2">
                   <h1>{item[Object.keys(item)[0]].total()} </h1>
                 </div>
-              </>
+              </React.Fragment>
             );
           })}
           <span className="absolute bottom-[-2rem] right-5 font-bold text-dark-500">
@@ -268,9 +268,11 @@ function CourseSwitch({ course, hostel }) {
             <h1 className="font-bold text-dark-500">
               <span
                 className="flex items-center justify-between"
-                onClick={() => setCaret(!caret)}
+                onClick={() => {
+                  setCaret(!caret);
+                }}
               >
-                1st Term{" "}
+                {term}{" "}
                 <span
                   className={`transition-all duration-300 ${
                     caret ? "rotate-180" : ""
@@ -284,13 +286,37 @@ function CourseSwitch({ course, hostel }) {
               className={`${
                 !caret
                   ? "hidden"
-                  : "  absolute flex flex-col items-start border-2 top-6 left-0 w-full bg-white rounded-lg text-dark-500"
+                  : "  absolute flex flex-col items-start border-2 top-6 left-0 w-full bg-white rounded-md text-dark-500"
               }`}
             >
               <ul className="w-full">
-                <li className="border-b-2 mx-2 my-2">Term 1</li>
-                <li className="border-b-2 mx-2 my-2">Term 2</li>
-                <li className="mx-2 pb-2">Term 3</li>
+                <li
+                  onClick={(e) => {
+                    setTerm(e.target.innerHTML);
+                    setCaret(!caret);
+                  }}
+                  className="border-b-2 mx-2 my-2"
+                >
+                  Term 1
+                </li>
+                <li
+                  onClick={(e) => {
+                    setTerm(e.target.innerHTML);
+                    setCaret(!caret);
+                  }}
+                  className="border-b-2 mx-2 my-2"
+                >
+                  Term 2
+                </li>
+                <li
+                  onClick={(e) => {
+                    setTerm(e.target.innerHTML);
+                    setCaret(!caret);
+                  }}
+                  className="mx-2 pb-2"
+                >
+                  Term 3
+                </li>
               </ul>
             </div>
           </div>
@@ -300,7 +326,7 @@ function CourseSwitch({ course, hostel }) {
           </div>
           {course.courseFee.map((item, index) => {
             return (
-              <>
+              <React.Fragment key={index}>
                 <div className="col-span-2 flex flex-col ml-5 border-b-2">
                   <h1>{Object.keys(item)[0]}</h1>
                 </div>
@@ -311,7 +337,7 @@ function CourseSwitch({ course, hostel }) {
                 <div className="flex flex-col items-end mr-5 border-b-2">
                   <h1>{item[Object.keys(item)[0]].total()} </h1>
                 </div>
-              </>
+              </React.Fragment>
             );
           })}
           <span className="absolute bottom-[-2rem] right-5 font-bold text-dark-500">
@@ -321,9 +347,9 @@ function CourseSwitch({ course, hostel }) {
         <br />
         <br />
         <div className="hidden md:grid grid-col-4 md:grid-cols-7 gap-3 mb-10 relative text-dark-200">
-          {hostel.map((item) => {
+          {hostel.map((item, index) => {
             return (
-              <>
+              <React.Fragment key={index}>
                 <div className="col-span-2 flex flex-col ml-5 border-b-2">
                   <h1>{Object.keys(item)[0]}</h1>
                 </div>
@@ -339,7 +365,7 @@ function CourseSwitch({ course, hostel }) {
                 <div className="col-span-2 border-b-2 flex flex-col items-end mr-5">
                   <h1>{item[Object.keys(item)[0]].total()} </h1>
                 </div>
-              </>
+              </React.Fragment>
             );
           })}
           <span className="absolute bottom-[-2rem] right-5 font-bold text-dark-500">

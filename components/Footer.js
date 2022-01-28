@@ -43,8 +43,8 @@ function Footer() {
             <p className="text-sm text-dark-500 font-normal">FAQs</p>
           </div>
         </div>
-        <div className="flex flex-col gap-4">
-          <div className="flex flex-col gap-3">
+        <div className="flex flex-col sm:gap-4">
+          <div className="flex flex-col sm:gap-3">
             <h2 className="mb-1 text-base font-bold text-dark-500">
               Contact Us
             </h2>
@@ -71,19 +71,19 @@ function Footer() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col gap-4 mt-4">
+          <div className="flex flex-col gap-y-4 mt-4">
             <h2 className="text-base font-bold text-dark-500">Follow Us</h2>
             <div className="flex gap-4">
-              <div className="border border-borderColor3-500 rounded-full w-10 h-10 p-3 flex items-center justify-center">
+              <div className="border border-borderColor3-500 rounded-full w-3 h-3 sm:w-10 md:h-10 md:p-3 flex items-center justify-center">
                 <img src="/footer/fb.png" alt="fb" />
               </div>
-              <div className="border border-borderColor3-500 rounded-full w-10 h-10 flex items-center justify-center">
+              <div className="border border-borderColor3-500 rounded-full w-3 h-3 sm:w-10 md:h-10 flex items-center justify-center">
                 <img src="/footer/linkedin.png" alt="linkedin" />
               </div>
-              <div className="border border-borderColor3-500 rounded-full w-10 h-10 flex items-center justify-center">
+              <div className="border border-borderColor3-500 rounded-full w-3 h-3 sm:w-10 md:h-10 flex items-center justify-center">
                 <img src="/footer/twitter.png" alt="twitter" />
               </div>
-              <div className="border border-borderColor3-500 rounded-full w-10 h-10 flex items-center justify-center">
+              <div className="border border-borderColor3-500 rounded-full w-3 h-3 sm:w-10 md:h-10 flex items-center justify-center">
                 <img src="/footer/instagram.png" alt="instagram" />
               </div>
             </div>
