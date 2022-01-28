@@ -15,8 +15,8 @@ function BannerContent() {
 
         <span className="absolute md:bottom-[-3rem] flex items-center bottom-[-1.5rem] right-[10px] md:right-[10rem] text-xs md:text-xl hover:underline hover:cursor-pointer">
           <svg
-            width="30"
-            height="30"
+            width="20"
+            height="20"
             viewBox="0 0 12 15"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
