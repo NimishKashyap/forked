@@ -44,7 +44,7 @@ function AdmissionOpenSwitch() {
     }
   };
   return (
-    <ul className="py-2 flex max-w-fit mb-6 text-dark-200 text-xs sm:text-sm whitespace-nowrap md:text-base overflow-x-auto">
+    <ul className="py-2 flex no-scrollbar max-w-fit mb-6 text-dark-200 text-xs sm:text-sm whitespace-nowrap md:text-base overflow-x-auto">
       <li
         onClick={handleClick}
         className={`ml-1 hover:cursor-pointer ${

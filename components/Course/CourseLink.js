@@ -14,14 +14,136 @@ const details = [
       {
         year: 1,
         curriculum: [
-          "Advanged Agricultural Management",
-          "Advanced Agricultural Management",
-          "Exercices on Advanced Agricultural Management",
-          "Advanced Agricultural Management",
-          "Advanced Agricultural Management",
-          "Advanced Agricultural Management",
-          "Advanced Agricultural Management",
-          "Advanced Agricultural Management",
+          {
+            "Semester 1": [
+              "Advanged Agricultural Management",
+              "Advanced Agricultural Management",
+              "Exercices on Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+            ],
+            "Semester 2": [
+              "Advanged Agricultural Management",
+              "Advanced Agricultural Management",
+              "Exercices on Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+            ],
+          },
+        ],
+      },
+      {
+        year: 2,
+        curriculum: [
+          {
+            "Semester 3": [
+              "Advanged Agricultural Management",
+              "Advanced Agricultural Management",
+              "Exercices on Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+            ],
+            "Semester 4": [
+              "Advanged Agricultural Management",
+              "Advanced Agricultural Management",
+              "Exercices on Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+            ],
+          },
+        ],
+      },
+      {
+        year: 3,
+        curriculum: [
+          {
+            "Semester 5": [
+              "Advanged Agricultural Management",
+              "Advanced Agricultural Management",
+              "Exercices on Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+            ],
+            "Semester 6": [
+              "Advanged Agricultural Management",
+              "Advanced Agricultural Management",
+              "Exercices on Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+            ],
+          },
+        ],
+      },
+      {
+        year: 4,
+        curriculum: [
+          {
+            "Semester 7": [
+              "Advanged Agricultural Management",
+              "Advanced Agricultural Management",
+              "Exercices on Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+            ],
+            "Semester 8": [
+              "Advanged Agricultural Management",
+              "Advanced Agricultural Management",
+              "Exercices on Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+            ],
+          },
+        ],
+      },
+      {
+        year: 5,
+        curriculum: [
+          {
+            "Semester 9": [
+              "Advanged Agricultural Management",
+              "Advanced Agricultural Management",
+              "Exercices on Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+            ],
+            "Semester 10": [
+              "Advanged Agricultural Management",
+              "Advanced Agricultural Management",
+              "Exercices on Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+              "Advanced Agricultural Management",
+            ],
+          },
         ],
       },
     ],
@@ -115,7 +237,7 @@ function CourseLink() {
     console.log(details[0].courseFee[0]["Tuition Fees"].total());
   }, []);
   return (
-    <div className="border-2  rounded-md shadow-md mb-5 overflow-hidden">
+    <div className="border-2 rounded-md shadow-md mb-5 ">
       {details.map((card) => (
         <>
           <header className="flex flex-col md:flex-row overflow-hidden relative">
@@ -186,8 +308,8 @@ function CourseLink() {
           </header>
 
           {/* ADD MAX H 0 */}
-          <div className={`overflow-hidden max-h-0 ${checked ? "max-h-fit" : ""}`}>
-            <section>
+          <div className={`max-h-0 ${checked ? "max-h-fit" : ""}`}>
+            <section className={`${checked ? "block" : "hidden"}`}>
               <CourseSwitch course={card} />
             </section>
           </div>

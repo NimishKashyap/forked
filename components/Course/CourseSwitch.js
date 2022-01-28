@@ -1,5 +1,8 @@
 import Image from "next/image";
 import React, { useState } from "react";
+import ExamsAcceptedCards from "../Admission/ExamsAcceptedCards";
+import ProcessCard from "../Admission/ProcessCard";
+import YearDropDown from "../YearDropDown";
 
 function CourseSwitch({ course }) {
   const initialState = {
@@ -46,7 +49,7 @@ function CourseSwitch({ course }) {
   };
   return (
     <>
-      <ul className="mx-5 my-3 py-2 flex max-w-fit mb-6 text-dark-200 text-xs sm:text-sm whitespace-nowrap md:text-base overflow-x-auto">
+      <ul className="mx-5 my-3 py-2 flex max-w-fit mb-6 text-dark-200 text-xs sm:text-sm whitespace-nowrap md:text-base overflow-x-auto cursor-pointer no-scrollbar">
         <li
           onClick={handleClick}
           className={`ml-1 hover:cursor-pointer ${
@@ -98,10 +101,17 @@ function CourseSwitch({ course }) {
           Admission Process
         </li>
       </ul>
-      <div className="pb-5 flex justify-between items-center">
+      {/* About section */}
+      <div
+        className={`pb-5 flex justify-between items-center ${
+          selected.about ? "block" : "hidden"
+        }`}
+      >
         <div className="md:w-2/3 mx-5">
           <h1 className="text-dark-500 md:text-2xl">About this Course</h1>
-          <p className="text-xs md:text-base font-light text-justify py-5">{course.about}</p>
+          <p className="text-xs md:text-base font-light text-justify py-5">
+            {course.about}
+          </p>
           <button className="flex items-center px-5 py-2 md:py-3 border-2 text-dark-200 border-primary-500 rounded-lg">
             <svg
               width="17"
@@ -137,8 +147,162 @@ function CourseSwitch({ course }) {
           </div>
         </div>
         <img
-          className="hidden md:block object-contain rounded-lg md:max-h-[220px] md:max-w-[40%]"
+          className="hidden lg:block object-contain rounded-lg mr-5 md:max-h-[220px] md:max-w-[40%]"
           src={`/course/courseInnerImage.png`}
+        />
+      </div>
+      {/* Curriculum */}
+      <div className={`${selected.curriculum ? "block" : "hidden"}`}>
+        <h1 className="text-dark-500 text-xl mx-5">Curriculum Outline</h1>
+        <YearDropDown course={course} />
+        <div className="mx-5">
+          <h3 className="text-dark-500 mb-5 text-xl">Semester 1</h3>
+          <div className="grid w-full md:grid-cols-2 md:grid-flow-col grid-rows-4 md:grid-rows-8 list-none text-dark-200">
+            <li className="flex items-center">
+              1) Advanced Agricultural Management
+            </li>
+            <li className="flex items-center">
+              2) Advanced Agricultural Management
+            </li>
+            <li className="flex items-center">
+              3) Advanced Agricultural Management
+            </li>
+            <li className="flex items-center">
+              4) Advanced Agricultural Management
+            </li>
+            <li className="flex items-center">
+              5) Advanced Agricultural Management
+            </li>
+            <li className="flex items-center">
+              6) Advanced Agricultural Management
+            </li>
+            <li className="flex items-center">
+              7) Advanced Agricultural Management
+            </li>
+            <li className="flex items-center">
+              8) Advanced Agricultural Management
+            </li>
+          </div>
+          <h3 className="text-dark-500 mb-5 text-xl mt-5">Semester 2</h3>
+          <div className="grid w-full md:grid-cols-2 md:grid-flow-col grid-rows-4 md:grid-rows-8 list-none mb-5 text-dark-200">
+            <li className="flex items-center">
+              1) Advanced Agricultural Management
+            </li>
+            <li className="flex items-center">
+              2) Advanced Agricultural Management
+            </li>
+            <li className="flex items-center">
+              3) Advanced Agricultural Management
+            </li>
+            <li className="flex items-center">
+              4) Advanced Agricultural Management
+            </li>
+            <li className="flex items-center">
+              5) Advanced Agricultural Management
+            </li>
+            <li className="flex items-center">
+              6) Advanced Agricultural Management
+            </li>
+            <li className="flex items-center">
+              7) Advanced Agricultural Management
+            </li>
+            <li className="flex items-center">
+              8) Advanced Agricultural Management
+            </li>
+          </div>
+        </div>
+      </div>
+      {/* CouseFee */}
+      <div></div>
+      {/* eligibility */}
+      <div className={`${selected.eligibility ? "block" : "hidden"}`}>
+        <div
+          className={`flex justify-between m-5 overflow-x-scroll no-scrollbar`}
+        >
+          <ExamsAcceptedCards />
+          <ExamsAcceptedCards />
+          <ExamsAcceptedCards />
+        </div>
+        <h1 className="text-dark-500 mx-5 md:text-2xl font-medium mt-6 mb-5">
+          Eligibility Criteria
+        </h1>
+        <ul className="mx-6 md:mx-10 mb-5 md:w-2/3 text-justify list-disc text-xs md:text-base">
+          <li className="text-primary-500">
+            <p className="text-dark-500">
+              The candidate must hold a Bachelor&apos;s or Master&apos;s Degree
+              in agricultural sciences or agriculture-related disciplines, with
+              at least 50% marks or equivalent CGPA from a university recognised
+              by UGC.
+            </p>
+          </li>
+          <br />
+          <li className="text-primary-500">
+            <p className="text-dark-500">
+              In case of the candidates belonging to Scheduled Caste
+              (SC)/Scheduled Tribe (ST) and Differently Abled (DA) category,
+              this is relaxed to 45%.
+            </p>
+          </li>
+          <br />
+          <li className="text-primary-500">
+            <p className="text-dark-500">
+              The Bachelor’s Degree or equivalent qualification obtained by the
+              candidate must entail a minimum of three years of education after
+              completing higher secondary schooling (10+2) or equivalent.
+            </p>
+          </li>
+          <br />
+          <li className="text-primary-500">
+            <p className="text-dark-500">
+              Should have a strong interest in agriculture, food, rural and
+              allied sectors. Such candidates will be required to submit a
+              special form as described in section 2.1 under the admission
+              procedure.
+            </p>
+          </li>
+          <br />
+          <li className="text-primary-500">
+            <p className="text-dark-500">
+              Failure to submit the form will disqualify the candidate from
+              being considered further for admission to the program.
+            </p>
+          </li>
+        </ul>
+        <div className="flex items-center mx-5 my-7">
+          <h1 className="text-dark-500 mr-5 text-sm md:text-xl font-medium">
+            Check Cutoffs and Selection Process Lorem Ipsum
+          </h1>
+          <button className="text-xs sm:w-auto md:text-base bg-primary-500 text-white px-5 py-2 md:px-10 md:py-2 font-medium rounded-lg">
+            CUTOFFS
+          </button>
+        </div>
+      </div>
+      {/* Admission Process */}
+      <div
+        className={`flex flex-col md:flex-row justify-evenly md:w-full ${
+          selected.admissionProcess ? "block" : "hidden"
+        }`}
+      >
+        <ProcessCard
+          src="/assets/step1.png"
+          step={"Step 1"}
+          details={
+            "Candidates will be short-listed for Group Discussion (GD) and have to be in a group of all the selected candidates."
+          }
+        />
+        <ProcessCard
+          src="/assets/step2.png"
+          step={"Step 2"}
+          details={
+            "Candidates will be short-listed for Group Discussion (GD) and have to be in a group of all the selected candidates."
+          }
+        />
+        <ProcessCard
+          src="/assets/step3.png"
+          step={"Step 3"}
+          details={
+            "Candidates will be short-listed for Group Discussion (GD) and have to be in a group of all the selected candidates."
+          }
         />
       </div>
     </>

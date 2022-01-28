@@ -6,7 +6,7 @@ function ProcessCard({ src, step, details }) {
     
       <div
         className={`flex flex-col items-center justify-center w-auto md:w-1/3 md:mx-8 md:p-5 ${
-          step === "Step 1" ? "ml-[2rem]" : ""
+          step === "Step 1" ? "ml-2 md:ml-[2rem]" : ""
         }`}
       >
         <Image

@@ -3,8 +3,8 @@ import React from "react";
 function CourseComp() {
   return (
     <section className="md:w-1/2 text-justify md:my-[3rem]">
-      <h1 className="text-3xl text-dark-500 mb-5">Course & Fees</h1>
-      <p>
+      <h1 className="text-3xl text-dark-500 mt-5 mb-5">Course & Fees</h1>
+      <p className="text-sm md:text-base">
         IIM Ahmedabad courses are divided into eight categories, all in the
         post-graduation or doctoral level of study. All programmes have a
         management focus and invite applications across many disciplines, each
@@ -13,7 +13,7 @@ function CourseComp() {
         subjects, in lieu of lectures and seminars.
       </p>
       <br />
-      <p>
+      <p className="text-sm md:text-base">
         Six of these eight IIMA courses are taught in-person at the campus, and
         two programmes, namely ePGP in Management and ePGD in Advanced Business
         Analytics, follow remote instruction.
