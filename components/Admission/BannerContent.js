@@ -13,7 +13,7 @@ function BannerContent() {
           Estd. in 1947
         </span>
 
-        <span className="absolute md:bottom-[-3rem] flex items-center bottom-[-1.5rem] right-[10px] md:right-[10rem] text-xs md:text-xl hover:underline hover:cursor-pointer">
+        <span className="absolute md:bottom-[-3rem] flex items-start bottom-[-1.5rem] right-[10px] md:right-[10rem] text-xs md:text-xl hover:underline hover:cursor-pointer">
           <svg
             width="20"
             height="20"
