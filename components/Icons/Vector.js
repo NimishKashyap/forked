@@ -1,7 +1,7 @@
 function Vector() {
   return (
     <svg
-      className="h-1rem w-1rem"
+      className="h-[1rem] w-[1rem] md:h-auto md:w-auto"
       width="21"
       height="20"
       viewBox="0 0 21 20"

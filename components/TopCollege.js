@@ -83,7 +83,7 @@ function TopCollege() {
 
   return (
     <div className="flex justify-center md:my-5 relative ">
-      <div className="flex overflow-x-auto scroll-smooth scrollbar">
+      <div className="no-scrollbar flex overflow-x-auto scroll-smooth scrollbar">
         {collegeItems.map((item, index) => (
           <TopCollegeItems
             key={index}
@@ -93,7 +93,7 @@ function TopCollege() {
           />
         ))}
 
-        <div className="flex absolute right-0 md:right-10 top-[-3rem]">
+        <div className="hidden md:flex absolute right-0 md:right-10 top-[-3rem]">
           <svg
             onClick={() => handleScroll(-1)}
             width="38"
