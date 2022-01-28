@@ -17,7 +17,7 @@ function courses() {
       </Head>
       <Navbar />
       <main className={styles.container}>
-        <div className="mt-[5.5rem]">
+        <div className="mt-[2rem] md:mt-[5.5rem]">
           <Banner />
         </div>
         <p className="mt-5 text-sm ml-2">
