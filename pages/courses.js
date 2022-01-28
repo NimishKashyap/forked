@@ -28,6 +28,8 @@ function courses() {
         <section >
           <AdmissionOpenSwitch />
           <CourseLink />
+          <CourseLink />
+          <CourseLink />
         </section>
       </main>
       <section>

@@ -2,9 +2,12 @@ import Image from "next/image";
 import React, { useState } from "react";
 import ExamsAcceptedCards from "../Admission/ExamsAcceptedCards";
 import ProcessCard from "../Admission/ProcessCard";
+import CaretIcon from "../Icons/CaretIcon";
 import YearDropDown from "../YearDropDown";
 
-function CourseSwitch({ course }) {
+function CourseSwitch({ course, hostel }) {
+  const [term, setTerm] = useState("1st Term");
+  const [caret, setCaret] = useState(false);
   const initialState = {
     about: false,
     curriculum: false,
@@ -157,7 +160,7 @@ function CourseSwitch({ course }) {
         <YearDropDown course={course} />
         <div className="mx-5">
           <h3 className="text-dark-500 mb-5 text-xl">Semester 1</h3>
-          <div className="grid w-full md:grid-cols-2 md:grid-flow-col grid-rows-4 md:grid-rows-8 list-none text-dark-200">
+          <div className="grid gap-y-2 w-full md:grid-cols-2 md:grid-flow-col grid-rows-4 md:grid-rows-8 list-none text-dark-200">
             <li className="flex items-center">
               1) Advanced Agricultural Management
             </li>
@@ -184,7 +187,7 @@ function CourseSwitch({ course }) {
             </li>
           </div>
           <h3 className="text-dark-500 mb-5 text-xl mt-5">Semester 2</h3>
-          <div className="grid w-full md:grid-cols-2 md:grid-flow-col grid-rows-4 md:grid-rows-8 list-none mb-5 text-dark-200">
+          <div className="grid gap-2 w-full md:grid-cols-2 md:grid-flow-col grid-rows-4 md:grid-rows-8 list-none mb-5 text-dark-200">
             <li className="flex items-center">
               1) Advanced Agricultural Management
             </li>
@@ -213,7 +216,137 @@ function CourseSwitch({ course }) {
         </div>
       </div>
       {/* CouseFee */}
-      <div></div>
+      <div className={`w-full ${selected.courseFee ? "block" : "hidden"}`}>
+        {/* Large screen */}
+        <div className="hidden md:grid grid-cols-7 gap-3 relative text-dark-200">
+          <div className="col-span-2 flex flex-col ml-5 border-b-2">
+            <h1 className="font-bold text-dark-500">Parameters</h1>
+          </div>
+          <div className="border-b-2">
+            <h1 className="font-bold text-dark-500">1st Term </h1>
+          </div>
+          <div className="border-b-2">
+            <h1 className="font-bold text-dark-500">2nd Term </h1>
+          </div>
+          <div className="border-b-2">
+            <h1 className="font-bold text-dark-500">3rd Term </h1>
+          </div>
+          <div className="col-span-2 flex flex-col items-end mr-5 border-b-2">
+            <h1 className="font-bold text-dark-500">Total INR</h1>
+          </div>
+          {course.courseFee.map((item, index) => {
+            return (
+              <>
+                <div className="col-span-2 flex flex-col ml-5 border-b-2">
+                  <h1>{Object.keys(item)[0]}</h1>
+                </div>
+                <div className="border-b-2">
+                  <h1>{item[Object.keys(item)[0]]["1st Term"]}</h1>
+                </div>
+                <div className="border-b-2">
+                  <h1>{item[Object.keys(item)[0]]["2nd Term"]} </h1>
+                </div>
+                <div className="border-b-2">
+                  <h1>{item[Object.keys(item)[0]]["3rd Term"]} </h1>
+                </div>
+                <div className="col-span-2 flex flex-col items-end mr-5 border-b-2">
+                  <h1>{item[Object.keys(item)[0]].total()} </h1>
+                </div>
+              </>
+            );
+          })}
+          <span className="absolute bottom-[-2rem] right-5 font-bold text-dark-500">
+            <span className="text-primary-500 mr-5">Sub Total: </span>45000
+          </span>
+        </div>
+        {/* Small screen */}
+        <div className="grid text-xs md:hidden grid-cols-4 gap-3 relative text-dark-200">
+          <div className="col-span-2 flex flex-col ml-5 border-b-2">
+            <h1 className="font-bold text-dark-500">Parameters</h1>
+          </div>
+          <div className="border-b-2 relative">
+            <h1 className="font-bold text-dark-500">
+              <span
+                className="flex items-center justify-between"
+                onClick={() => setCaret(!caret)}
+              >
+                1st Term{" "}
+                <span
+                  className={`transition-all duration-300 ${
+                    caret ? "rotate-180" : ""
+                  }`}
+                >
+                  <CaretIcon />
+                </span>
+              </span>
+            </h1>
+            <div
+              className={`${
+                !caret
+                  ? "hidden"
+                  : "  absolute flex flex-col items-start border-2 top-6 left-0 w-full bg-white rounded-lg text-dark-500"
+              }`}
+            >
+              <ul className="w-full">
+                <li className="border-b-2 mx-2 my-2">Term 1</li>
+                <li className="border-b-2 mx-2 my-2">Term 2</li>
+                <li className="mx-2 pb-2">Term 3</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-end mr-5 border-b-2">
+            <h1 className="font-bold text-dark-500">Total INR</h1>
+          </div>
+          {course.courseFee.map((item, index) => {
+            return (
+              <>
+                <div className="col-span-2 flex flex-col ml-5 border-b-2">
+                  <h1>{Object.keys(item)[0]}</h1>
+                </div>
+                <div className="border-b-2">
+                  <h1>{item[Object.keys(item)[0]][term]}</h1>
+                </div>
+
+                <div className="flex flex-col items-end mr-5 border-b-2">
+                  <h1>{item[Object.keys(item)[0]].total()} </h1>
+                </div>
+              </>
+            );
+          })}
+          <span className="absolute bottom-[-2rem] right-5 font-bold text-dark-500">
+            <span className="text-primary-500 mr-5">Sub Total: </span>45000
+          </span>
+        </div>
+        <br />
+        <br />
+        <div className="hidden md:grid grid-col-4 md:grid-cols-7 gap-3 mb-10 relative text-dark-200">
+          {hostel.map((item) => {
+            return (
+              <>
+                <div className="col-span-2 flex flex-col ml-5 border-b-2">
+                  <h1>{Object.keys(item)[0]}</h1>
+                </div>
+                <div className="border-b-2">
+                  <h1>{item[Object.keys(item)[0]]["1st Term"]}</h1>
+                </div>
+                <div className="border-b-2">
+                  <h1>{item[Object.keys(item)[0]]["2nd Term"]} </h1>
+                </div>
+                <div className="border-b-2">
+                  <h1>{item[Object.keys(item)[0]]["3rd Term"]} </h1>
+                </div>
+                <div className="col-span-2 border-b-2 flex flex-col items-end mr-5">
+                  <h1>{item[Object.keys(item)[0]].total()} </h1>
+                </div>
+              </>
+            );
+          })}
+          <span className="absolute bottom-[-2rem] right-5 font-bold text-dark-500">
+            <span className="text-primary-500 mr-5">Total: </span>45000
+          </span>
+        </div>
+      </div>
       {/* eligibility */}
       <div className={`${selected.eligibility ? "block" : "hidden"}`}>
         <div

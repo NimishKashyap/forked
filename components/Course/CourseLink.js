@@ -159,76 +159,98 @@ const details = [
         },
       },
       {
-        "Tuition Fees": {
-          "1st Term": 80000,
-          "2nd Term": 80000,
-          "3rd Term": 80000,
+        "Course Materials": {
+          "1st Term": 5000,
+          "2nd Term": 5000,
+          "3rd Term": 5000,
           total: function () {
             return this["1st Term"] + this["2nd Term"] + this["3rd Term"];
           },
         },
       },
       {
-        "Tuition Fees": {
-          "1st Term": 80000,
-          "2nd Term": 80000,
-          "3rd Term": 80000,
+        Library: {
+          "1st Term": 6000,
+          "2nd Term": 6000,
+          "3rd Term": 6000,
           total: function () {
             return this["1st Term"] + this["2nd Term"] + this["3rd Term"];
           },
         },
       },
       {
-        "Tuition Fees": {
-          "1st Term": 80000,
-          "2nd Term": 80000,
-          "3rd Term": 80000,
+        "Computing/Networking": {
+          "1st Term": 25000,
+          "2nd Term": 25000,
+          "3rd Term": 25000,
           total: function () {
             return this["1st Term"] + this["2nd Term"] + this["3rd Term"];
           },
         },
       },
       {
-        "Tuition Fees": {
-          "1st Term": 80000,
-          "2nd Term": 80000,
-          "3rd Term": 80000,
+        "Development Fees": {
+          "1st Term": 12000,
+          "2nd Term": 12000,
+          "3rd Term": 12000,
           total: function () {
             return this["1st Term"] + this["2nd Term"] + this["3rd Term"];
           },
         },
       },
       {
-        "Tuition Fees": {
-          "1st Term": 80000,
-          "2nd Term": 80000,
-          "3rd Term": 80000,
+        "Student Club Fees": {
+          "1st Term": 7000,
+          "2nd Term": 7000,
+          "3rd Term": 7000,
           total: function () {
             return this["1st Term"] + this["2nd Term"] + this["3rd Term"];
           },
         },
       },
       {
-        "Tuition Fees": {
-          "1st Term": 80000,
-          "2nd Term": 80000,
-          "3rd Term": 80000,
+        "Alumni Activities": {
+          "1st Term": 1500,
+          "2nd Term": 1500,
+          "3rd Term": 1500,
           total: function () {
             return this["1st Term"] + this["2nd Term"] + this["3rd Term"];
           },
         },
       },
       {
-        "Tuition Fees": {
-          "1st Term": 80000,
-          "2nd Term": 80000,
-          "3rd Term": 80000,
+        "Security Deposit": {
+          "1st Term": 20000,
+          "2nd Term": 20000,
+          "3rd Term": 20000,
           total: function () {
             return this["1st Term"] + this["2nd Term"] + this["3rd Term"];
           },
         },
       },
     ],
+  },
+];
+const hostelDetails = [
+  {
+    "Hostel Fees": {
+      "1st Term": 20000,
+      "2nd Term": 20000,
+      "3rd Term": 20000,
+      total: function () {
+        return this["1st Term"] + this["2nd Term"] + this["3rd Term"];
+      },
+    },
+  },
+  {
+    "Hostel Security Deposit": {
+      "1st Term": 20000,
+      "2nd Term": 20000,
+      "3rd Term": 20000,
+      total: function () {
+        return this["1st Term"] + this["2nd Term"] + this["3rd Term"];
+      },
+    },
   },
 ];
 function CourseLink() {
@@ -308,9 +330,11 @@ function CourseLink() {
           </header>
 
           {/* ADD MAX H 0 */}
-          <div className={`max-h-0 ${checked ? "max-h-fit" : ""}`}>
+          <div
+            className={`max-h-0 overflow-hidden ${checked ? "max-h-fit" : ""}`}
+          >
             <section className={`${checked ? "block" : "hidden"}`}>
-              <CourseSwitch course={card} />
+              <CourseSwitch course={card} hostel={hostelDetails}/>
             </section>
           </div>
         </>

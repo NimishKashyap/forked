@@ -14,9 +14,11 @@ function YearDropDown({ course }) {
       <span>
         <p
           onClick={() => setShow(!show)}
-          className="text-dark-500 border-b-2 max-w-fit flex items-center"
+          className="text-dark-500 max-w-[150px] flex items-center justify-between relative p-2 shadow-sm"
         >
-          <span className="mr-5 hover:cursor-pointer">Year {courseYear}</span>
+          <span className="ml-2 py-2 hover:cursor-pointer">
+            Year {courseYear}
+          </span>
           <span
             className={`transition-all duration-300 ${
               show ? "rotate-180" : ""
@@ -24,17 +26,27 @@ function YearDropDown({ course }) {
           >
             <CaretIcon />
           </span>
+          <div
+            className={`absolute transition-all p-2 max-h-[200px] md:max-h-[500px] overflow-y-auto duration-300 flex flex-col w-full top-10 left-0 bg-white rounded-lg z-500 list-none ${
+              show ? "block" : "hidden"
+            }`}
+          >
+            <ul>
+              {course.curriculumOutline.map((item, index) => (
+                <li
+                  onClick={(e) => {
+                    setShow(!show);
+                    setCourseYear(item.year)
+                  }}
+                  className="border-b-2 flex justify-between items-center ml-2 py-2 text-dark-200"
+                  key={index}
+                >
+                  Year {item.year}{" "}
+                </li>
+              ))}
+            </ul>
+          </div>
         </p>
-        <div
-          className={`absolute top-0 flex flex-col left-0 z-500 bg-white list-none ${
-            show ? "block" : "hidden"
-          }`}
-        >
-          {course.curriculumOutline.map((item, index) => (
-            <li  key={index}>Year {item.year}</li>
-          ))}
-        </div>
-        
       </span>
     </div>
   );
