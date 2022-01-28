@@ -15,9 +15,12 @@ function AdmissionOpen() {
     console.log(checked);
   }, [checked]);
   return (
-    <div className="border-2 rounded-xl mb-5 overflow-hidden">
+    <div className="border-2 rounded-xl mb-5 overflow-hidden transition-all duration-300">
       <header className="flex flex-col md:flex-row overflow-hidden relative">
-        <img className="h-[200px] object-cover md:h-auto" src={"/assets/admissionPhoto.png"} />
+        <img
+          className="h-[200px] object-cover md:h-auto"
+          src={"/assets/admissionPhoto.png"}
+        />
         <div className="flex flex-col justify-between w-full my-5 mt-6">
           <div className="mx-5 md:mx-[4rem]">
             <h3 className="text-sm lg:text-2xl mx-1 text-dark-500">
@@ -75,7 +78,7 @@ function AdmissionOpen() {
 
         <span
           onClick={() => setChecked(!checked)}
-          className={`cursor-pointer absolute bottom-3 right-3 ${
+          className={`cursor-pointer transition-all duration-300 absolute bottom-3 right-3 ${
             checked ? "rotate-180" : ""
           }`}
         >
@@ -83,13 +86,15 @@ function AdmissionOpen() {
         </span>
       </header>
       <div
-        className={`overflow-hidden max-h-0 ${
+        className={`overflow-hidden max-h-0 transition-all duration-500 ${
           checked ? "max-h-fit" : ""
-        } transition-transform`}
+        }`}
       >
         <AdmissionDetails />
         <section>
-          <h1 className="text-xl md:text-3xl my-6 mx-6 text-dark-500">Exams Accepted</h1>
+          <h1 className="text-xl md:text-3xl my-6 mx-6 text-dark-500">
+            Exams Accepted
+          </h1>
           <div className="flex justify-between m-5 overflow-x-auto">
             <ExamsAcceptedCards />
             <ExamsAcceptedCards />

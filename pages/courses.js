@@ -8,7 +8,7 @@ import Review from "../components/Review";
 import TopCollege from "../components/TopCollege";
 import CourseLink from "../components/Course/CourseLink";
 import Footer from "../components/Footer";
-
+import AdmissionOpenSwitch from "../components/AdmissionOpenSwitch";
 function courses() {
   return (
     <>
@@ -17,20 +17,16 @@ function courses() {
       </Head>
       <Navbar />
       <main className={styles.container}>
-        <Banner />
-        <p className="mt-4 text-sm ml-2">
+        <div className="mt-[5.5rem]">
+          <Banner />
+        </div>
+        <p className="mt-5 text-sm ml-2">
           Home {">"} College {">"} MBA {">"} IIMA {">"} Admissions
         </p>
         <ScrollView />
         <CourseComp />
         <section className="my-5">
-          <ul className="flex border-b-2 max-w-fit my-4 text-dark-200">
-            <li className="ml-1">Bachelors</li>
-            <li className="ml-5">Masters</li>
-            <li className="ml-5">Certificate</li>
-            <li className="ml-5">Diploma</li>
-            <li className="ml-5 mr-1">Ph. D</li>
-          </ul>
+          <AdmissionOpenSwitch />
           <CourseLink />
         </section>
         <section>

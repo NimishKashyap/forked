@@ -2,7 +2,7 @@ import React from "react";
 
 function CourseComp() {
   return (
-    <section className="w-1/2 text-justify mt-[3rem]">
+    <section className="md:w-1/2 text-justify md:my-[3rem]">
       <h1 className="text-3xl text-dark-500 mb-5">Course & Fees</h1>
       <p>
         IIM Ahmedabad courses are divided into eight categories, all in the
