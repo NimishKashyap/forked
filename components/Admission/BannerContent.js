@@ -13,28 +13,15 @@ function BannerContent() {
           Estd. in 1947
         </span>
 
-        <span className="absolute md:bottom-[-3rem] flex items-start bottom-[-1.5rem] right-[10px] md:right-[10rem] text-xs md:text-xl hover:underline hover:cursor-pointer">
+        <span className="absolute md:bottom-[-3rem] flex items-start bottom-[-1.5rem] right-[10px] md:right-[10rem] text-xs md:text-xl hover:underline hover:cursor-pointer text-white">
           <svg
-            width="20"
-            height="20"
-            viewBox="0 0 12 15"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            className="fill-white"
+            viewBox="0 0 24 24"
           >
-            <path
-              d="M6 7.875C7.03553 7.875 7.875 7.03553 7.875 6C7.875 4.96447 7.03553 4.125 6 4.125C4.96447 4.125 4.125 4.96447 4.125 6C4.125 7.03553 4.96447 7.875 6 7.875Z"
-              stroke="#FAFAFA"
-              strokeWidth="1.2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M-nan -nanL6 1C4.67392 1 3.40215 1.54786 2.46447 2.52304C1.52678 3.49823 1 4.82087 1 6.2C1 7.4298 1.25125 8.2345 1.9375 9.125L5.61589 13.5391C5.81579 13.7789 6.18421 13.7789 6.38411 13.5391L10.0625 9.125C10.7488 8.2345 11 7.4298 11 6.2C11 4.82087 10.4732 3.49823 9.53553 2.52304C8.59785 1.54786 7.32608 1 6 1L-nan -nanL-nan -nanZ"
-              stroke="#FAFAFA"
-              strokeWidth="1.2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
+            <path d="M12 2c3.196 0 6 2.618 6 5.602 0 2.238-1.058 3.488-2.659 5.381-1.078 1.274-2.303 2.722-3.341 4.697-1.038-1.976-2.263-3.423-3.341-4.697-1.601-1.893-2.659-3.143-2.659-5.381 0-2.984 2.804-5.602 6-5.602zm0-2c-4.198 0-8 3.403-8 7.602 0 6.243 6.377 6.903 8 16.398 1.623-9.495 8-10.155 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z" />
           </svg>
           <p>Ahmedabad, Gujrat</p>
         </span>

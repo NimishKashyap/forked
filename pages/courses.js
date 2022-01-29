@@ -43,7 +43,7 @@ function courses() {
       <main className={styles.secondContainer}>
         <section>
           <section>
-            <h1 className="text-dark-500 text-3xl my-[3rem]">
+            <h1 className="text-dark-500 text-3xl my-5 mx-5 md:my-[3rem]">
               Top MBA Colleges
             </h1>
             <TopCollege />

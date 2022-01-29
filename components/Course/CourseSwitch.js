@@ -160,7 +160,7 @@ function CourseSwitch({ course, hostel }) {
         <YearDropDown course={course} />
         <div className="mx-5">
           <h3 className="text-dark-500 mb-5 text-xl">Semester 1</h3>
-          <div className="grid gap-y-2 w-full md:grid-cols-2 md:grid-flow-col grid-rows-4 md:grid-rows-8 list-none text-dark-200">
+          <div className="grid gap-y-2 w-full md:grid-cols-2 md:grid-flow-col grid-rows-4 md:grid-rows-8 list-none text-sm md:text-base text-dark-200">
             <li className="flex items-center">
               1) Advanced Agricultural Management
             </li>
@@ -187,7 +187,7 @@ function CourseSwitch({ course, hostel }) {
             </li>
           </div>
           <h3 className="text-dark-500 mb-5 text-xl mt-5">Semester 2</h3>
-          <div className="grid gap-2 w-full md:grid-cols-2 md:grid-flow-col grid-rows-4 md:grid-rows-8 list-none mb-5 text-dark-200">
+          <div className="grid gap-2 w-full md:grid-cols-2 md:grid-flow-col grid-rows-4 md:grid-rows-8 list-none mb-5 text-sm md:text-base text-dark-200">
             <li className="flex items-center">
               1) Advanced Agricultural Management
             </li>
@@ -216,7 +216,7 @@ function CourseSwitch({ course, hostel }) {
         </div>
       </div>
       {/* CouseFee */}
-      <div className={`w-full ${selected.courseFee ? "block" : "hidden"}`}>
+      <div className={`w-full mb-16 md:mb-auto ${selected.courseFee ? "block" : "hidden"}`}>
         {/* Large screen */}
         <div className="hidden md:grid grid-cols-7 gap-3 relative text-dark-200">
           <div className="col-span-2 flex flex-col ml-5 border-b-2">
@@ -346,6 +346,7 @@ function CourseSwitch({ course, hostel }) {
         </div>
         <br />
         <br />
+        {/* Hostel fees large */}
         <div className="hidden md:grid grid-col-4 md:grid-cols-7 gap-3 mb-10 relative text-dark-200">
           {hostel.map((item, index) => {
             return (
@@ -372,6 +373,28 @@ function CourseSwitch({ course, hostel }) {
             <span className="text-primary-500 mr-5">Total: </span>45000
           </span>
         </div>
+        <div className="grid text-xs md:hidden grid-cols-4 gap-3 relative text-dark-200">
+          {hostel.map((item, index) => {
+            return (
+              <React.Fragment key={index}>
+                <div className="col-span-2 flex flex-col ml-5 border-b-2">
+                  <h1>{Object.keys(item)[0]}</h1>
+                </div>
+                <div className="border-b-2">
+                  <h1>{item[Object.keys(item)[0]][term]}</h1>
+                </div>
+
+                <div className="flex flex-col items-end mr-5 border-b-2">
+                  <h1>{item[Object.keys(item)[0]].total()} </h1>
+                </div>
+              </React.Fragment>
+            );
+          })}
+          <span className="absolute bottom-[-2rem] right-5 font-bold text-dark-500">
+            <span className="text-primary-500 mr-5">Total: </span>45000
+          </span>
+        </div>
+        {/* Hostel fees small */}
       </div>
       {/* eligibility */}
       <div className={`${selected.eligibility ? "block" : "hidden"}`}>
