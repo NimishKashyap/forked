@@ -11,6 +11,7 @@ import CampusIcon from "./Icons/CampusIcon";
 import FacultyIcon from "./Icons/FacultyIcon";
 import Clubs from "./Icons/Clubs";
 import AchievementIcon from "./Icons/AchievementIcon";
+import Link from "next/link";
 function ScrollView() {
   const handleScroll = (no) => {
     const scroll = document.querySelector(".scrollview-scroll");
@@ -34,8 +35,16 @@ function ScrollView() {
       </span>
       <ul className="scrollview-scroll relative flex mx-[25px]  justify-start xl:max-w-full md:justify-start overflow-auto scroll-smooth rounded-lg p-3 no-scrollbar">
         <ScrollViewItems icon={<Vector />} name={"COLLEGE INFO"} />
-        <ScrollViewItems icon={<CourseFeeIcon />} name={"COURSE & FEES"} />
-        <ScrollViewItems icon={<AdmissionIcon />} name={"ADMISSION"} />
+        <ScrollViewItems
+          href={"/courses"}
+          icon={<CourseFeeIcon />}
+          name={"COURSE & FEES"}
+        />
+        <ScrollViewItems
+          href={"/admission"}
+          icon={<AdmissionIcon />}
+          name={"ADMISSION"}
+        />
         <ScrollViewItems icon={<CutOffIcon />} name={"CUTOFFS"} />
         <ScrollViewItems icon={<Scholarship />} name={"SCHOLARSHIPS"} />
         <ScrollViewItems icon={<PlacementIcon />} name={"PLACEMENTS"} />
