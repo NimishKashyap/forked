@@ -13,13 +13,13 @@ function ScrollView() {
     <div className="relative mx-2 my-3 xl:my-5 border-2 border-[rgba(125,125,125,0.4)] px-5 rounded-md">
       <span
         onClick={() => handleScroll(-1)}
-        className="caret-icon absolute top-6 md:top-7 left-5 md:left-16 text-primary-500 rotate-90 "
+        className="caret-icon absolute top-6 md:top-7 left-5 md:left-[2rem] text-primary-500 rotate-90 "
       >
         <CaretIcon className={"primary-caret"} />
       </span>
       <span
         onClick={() => handleScroll(1)}
-        className="caret-icon absolute top-6 md:top-7 right-5 md:right-16 text-primary-500 rotate-[-90deg] "
+        className="caret-icon absolute top-6 md:top-7 right-5 md:right-[2rem] text-primary-500 rotate-[-90deg] "
       >
         <CaretIcon className={"primary-caret"} />
       </span>
