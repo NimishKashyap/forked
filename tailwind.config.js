@@ -1,5 +1,6 @@
 module.exports = {
-    content: [
+  mode: "jit",
+  content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
@@ -42,12 +43,12 @@ module.exports = {
     height: {
       '237':'15rem',
       '28': '28rem',
+      },
+      backgroundColor: ["active"],
+      backgroundImage: {
+        "hero-pattern": "url('/assets/bannerCollege.png')",
+      },
     },
-    lineHeight: {
-      '58': '3.625rem',
-    }
   },
-  plugins: [
-    require('tailwind-scrollbar-hide')
-  ],
-}
+  plugins: [],
+};
