@@ -49,6 +49,5 @@ module.exports = {
         "hero-pattern": "url('/assets/bannerCollege.png')",
       },
     },
-  },
   plugins: [],
 };
