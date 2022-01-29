@@ -32,7 +32,7 @@ function courses() {
           <CourseLink />
         </section>
       </main>
-      <section>
+      <section className="md:mx-[4rem]">
         <Review />
         <Review />
         <Review />
