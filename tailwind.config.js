@@ -9,15 +9,17 @@ module.exports = {
         dark:{
           500:"#404366",
           900:"#000",
+          600:"#2B3A77",
           700:"#4B4B4B",
           200:"#9092A9"
         },
         primary:{
-          500:"#D97559"
+          500:"#D97559",
         },
         fadeWhite:{
           500:"#FAFAFA",
-          200:"#F2F2F2"
+          200:"#F2F2F2",
+          400:"#FFFFFF"
         },
         borderColor:{
           500:"#C8C8C8"
@@ -35,9 +37,10 @@ module.exports = {
           500:"#818181"
         }
       },
-      backgroundColor:["active"]
+      backgroundColor:["active"],
     },
     height: {
+      '237':'15rem',
       '28': '28rem',
     },
     lineHeight: {
