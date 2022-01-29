@@ -82,8 +82,8 @@ function TopCollege() {
   };
 
   return (
-    <div className="flex justify-center md:my-5 relative ">
-      <div className="no-scrollbar flex overflow-x-auto scroll-smooth scrollbar">
+    <div className="flex justify-center md:my-6 relative ">
+      <div className="no-scrollbar flex overflow-x-auto py-4 scroll-smooth scrollbar">
         {collegeItems.map((item, index) => (
           <TopCollegeItems
             key={index}
