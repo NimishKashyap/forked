@@ -4,14 +4,14 @@ import Image from "next/image";
 function ExploreCampus() {
   return (
     <div className="mx-4 sm:mx-12 h-3/5">
-      <h1 className="text-2xl text-dark-500">Explore Campus</h1>
-      <div className="flex border-b-2 rounded-sm border-borderColor-500 gap-3 my-4 w-fit">
+      <h1 className="text-2xl mb-4 sm:mb-0 text-dark-500">Explore Campus</h1>
+      <div className="hidden sm:flex border-b-2 rounded-sm border-borderColor-500 gap-3 my-4 w-fit overflow-x-scroll scrollbar-hide">
         <p className="font-normal text-base text-dark-200">Infrastructure</p>
         <p className="font-normal text-base text-dark-200">Classrooms</p>
         <p className="font-normal text-base text-dark-200">Library</p>
-        <p className="font-normal text-base text-dark-200">Campus Life</p>
+        <p className="font-normal text-base text-dark-200">Campus</p>
         <p className="font-normal text-base text-dark-200">Hostel</p>
-        <p className="font-normal text-base text-dark-200">Computer Lab</p>
+        <p className="font-normal text-base text-dark-200">Computer</p>
         <p className="font-normal text-base text-dark-200">Others</p>
       </div>
       <div className="flex h-full gap-2">
