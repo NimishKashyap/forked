@@ -4,9 +4,9 @@ function Contact() {
   return (
     <div className="mx-4 sm:mx-12">
     <h1 className="text-2xl text-dark-500">Contact</h1>
-    <div className="flex">
+    <div className="flex md:flex-row flex-col gap-6 my-2">
     
-      <div className="flex-initial w-4/6">
+      <div className="flex-initial w-full md:w-4/6">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58748.00106305306!2d72.49775137910157!3d23.03294730000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84c7db78f57b%3A0x18a73db63ed05c39!2sIndian%20Institute%20of%20Management%20Ahmedabad!5e0!3m2!1sen!2sin!4v1643439288377!5m2!1sen!2sin"
           className="w-full"

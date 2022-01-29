@@ -6,11 +6,11 @@ function CollegeInformation() {
     <div className="mx-4 sm:mx-12">
       {" "}
       <h1 className="text-2xl text-dark-600">College Information</h1>
-      <div className="flex mt-7">
-        <div className="flex-initial w-3/5">
+      <div className="flex-col lg:flex-row flex mt-7">
+        <div className="flex-initial w-full lg:w-3/5">
           <div>
             <h2 className="text-2xl text-dark-500">About</h2>
-            <p className="text-dark-700 text-sm w-4/5 mt-4 mb-2">
+            <p className="text-dark-700 text-sm w-full md:w-4/5 mt-4 mb-2">
               Indian Institute of Management Ahmedabad is a business school
               located in Ahmedabad, Gujarat, India. The school has been accorded
               the status of an Institute of National Importance by Ministry of
@@ -33,7 +33,7 @@ function CollegeInformation() {
             </div>
           </div>
           <div className="flex flex-col my-12">
-            <div className="flex gap-10">
+            <div className="flex gap-2 sm:gap-10">
               <div className="flex gap-2 items-end">
                 <div>
                   <Image
@@ -43,9 +43,9 @@ function CollegeInformation() {
                     height="72px"
                   />
                 </div>
-                <div>
+                <div className="sm:mb-0 mb-1">
                   <h1 className="text-dark-500 font-bold uppercase text-2xl">1951</h1>
-                  <p className="text-dark-700 font-base">Established since</p>
+                  <p className="text-dark-700 text-xs sm:text-base">Established since</p>
                 </div>
               </div>
               <div className="flex gap-2 items-end">
@@ -57,9 +57,9 @@ function CollegeInformation() {
                     height="72px"
                   />
                 </div>
-                <div>
+                <div className="sm:mb-0 mb-1">
                   <h1 className="text-dark-500 font-bold uppercase text-2xl">1951</h1>
-                  <p className="text-dark-700 font-base">Established since</p>
+                  <p className="text-dark-700 text-xs sm:text-base">Established since</p>
                 </div>
               </div>
               <div className="flex gap-2 items-end">
@@ -71,13 +71,13 @@ function CollegeInformation() {
                     height="72px"
                   />
                 </div>
-                <div>
+                <div className="sm:mb-0 mb-1">
                   <h1  className="text-dark-500 font-bold uppercase text-2xl">1951</h1>
-                  <p className="text-dark-700 font-base">Established since</p>
+                  <p className="text-dark-700 text-xs sm:text-base">Established since</p>
                 </div>
               </div>
             </div>
-            <div className="flex gap-10 mt-6">
+            <div className="flex gap-2 sm:gap-10 mt-6">
               <div className="flex gap-2 items-end">
                 <div>
                   <Image
@@ -87,9 +87,9 @@ function CollegeInformation() {
                     height="72px"
                   />
                 </div>
-                <div>
+                <div className="sm:mb-0 mb-1">
                   <h1  className="text-dark-500 font-bold uppercase text-2xl">1951</h1>
-                  <p className="text-dark-700 font-base">Established since</p>
+                  <p className="text-dark-700 text-xs sm:text-base">Established since</p>
                 </div>
               </div>
               <div className="flex gap-2 items-end">
@@ -101,15 +101,15 @@ function CollegeInformation() {
                     height="72px"
                   />
                 </div>
-                <div>
+                <div className="sm:mb-0 mb-1">
                   <h1  className="text-dark-500 font-bold uppercase text-2xl">1951</h1>
-                  <p className="text-dark-700 font-base">Established since</p>
+                  <p className="text-dark-700 text-xs sm:text-base">Established since</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex-initial w-2/5">
+        <div className="flex-initial w-full lg:w-2/5">
           <h2 className="text-lg text-dark-500">College News and Updates</h2>
           <div className="border border-borderColor-500 rounded box-border bg-fadeWhite-500 mt-7">
             <div className="flex items-center relative my-2">
