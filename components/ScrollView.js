@@ -10,7 +10,7 @@ function ScrollView() {
     scroll.scrollBy(no * 100, 0);
   };
   return (
-    <div className="relative xl:mx-[10rem] xl:my-5 border-2 border-[rgba(125,125,125,0.4)] px-5 rounded-md">
+    <div className="relative mx-2 my-3 xl:my-5 border-2 border-[rgba(125,125,125,0.4)] px-5 rounded-md">
       <span
         onClick={() => handleScroll(-1)}
         className="caret-icon absolute top-6 md:top-7 left-5 md:left-16 text-primary-500 rotate-90 "
@@ -24,6 +24,9 @@ function ScrollView() {
         <CaretIcon className={"primary-caret"} />
       </span>
       <ul className="scrollview-scroll relative flex mx-[25px] md:mx-[5rem] justify-start md:max-w-[80%] xl:max-w-full md:justify-center overflow-auto scroll-smooth rounded-lg p-3 no-scrollbar">
+        <ScrollViewItems icon={<Vector />} name={"COLLEGE INFO"} />
+        <ScrollViewItems icon={<Vector />} name={"COLLEGE INFO"} />
+        <ScrollViewItems icon={<Vector />} name={"COLLEGE INFO"} />
         <ScrollViewItems icon={<Vector />} name={"COLLEGE INFO"} />
         <ScrollViewItems icon={<Vector />} name={"COLLEGE INFO"} />
         <ScrollViewItems icon={<Vector />} name={"COLLEGE INFO"} />
