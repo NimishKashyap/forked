@@ -1,7 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from "next/image";
 
 function TopRecruiter() {
+      const [placement,setPlacement] =useState(true);
+      const [admission,setAdmission] =useState(false);
+      const [facilities,setFacilities] =useState(false);
+      const [campus,setCampus] =useState(false);
+
+      const handlePlacement =()=>{
+            setPlacement(true);
+            setAdmission(false);
+            setCampus(false);
+            setFacilities(false);
+      }
+      const handleAdmission =()=>{
+            setPlacement(false);
+            setAdmission(true);
+            setCampus(false);
+            setFacilities(false);
+      }
+      const handleFacilities =()=>{
+            setPlacement(false);
+            setAdmission(false);
+            setCampus(false);
+            setFacilities(true);
+      }
+      const handleCampus =()=>{
+            setPlacement(false);
+            setAdmission(false);
+            setCampus(true);
+            setFacilities(false);
+      }
+
   return <div className="mx-4 sm:mx-12 my-8 ">
       <h1 className="text-2xl text-dark-500">Top Recruiters </h1>
       <div className="my-6 flex gap-6 overflow-x-scroll scrollbar-hide">
@@ -15,11 +45,11 @@ function TopRecruiter() {
 {/* college highlights */}
 <h1 className="text-2xl text-dark-500 mt-8">College Highlights</h1>
 <div className="mt-2">
-      <div className="hidden lg:flex border-b-2 rounded-sm border-borderColor-500 gap-5 my-4 w-fit -mb-0">
-            <p className="font-normal text-base text-dark-200">Placements</p>
-            <p className="font-normal text-base text-dark-200">Admissions</p>
-            <p className="font-normal text-base text-dark-200">Facilities</p>
-            <p className="font-normal text-base text-dark-200">Campus Life</p>
+      <div className="hidden lg:flex rounded-sm gap-5 my-4 w-fit -mb-0">
+            <p onClick={handlePlacement} className={`text-base ${placement?"border-b-2 border-primary-500 rounded-sm font-bold text-dark-500":"text-dark-200 font-normal"}`}>Placements</p>
+            <p onClick={handleAdmission} className={`text-base ${admission?"border-b-2 border-primary-500 rounded-sm font-bold text-dark-500":"text-dark-200 font-normal"}`}>Admissions</p>
+            <p onClick={handleFacilities} className={`text-base ${facilities?"border-b-2 border-primary-500 rounded-sm font-bold text-dark-500":"text-dark-200 font-normal"}`}>Facilities</p>
+            <p  onClick={handleCampus} className={`text-base ${campus?"border-b-2 border-primary-500 rounded-sm font-bold text-dark-500":"text-dark-200 font-normal"}`}>Campus Life</p>
       </div>
       
 <div className="flex flex-col-reverse lg:flex-row gap-6 justify-start">

@@ -39,7 +39,6 @@ module.exports = {
         }
       },
       backgroundColor:["active"],
-    },
     height: {
       '237':'15rem',
       '28': '28rem',
@@ -50,5 +49,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
 };
