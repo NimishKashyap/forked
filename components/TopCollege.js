@@ -57,13 +57,13 @@ const collegeItems = [
 
 function TopCollegeItems({ imgSrc, header, location }) {
   return (
-    <div className="relative flex flex-col border-2 md:max-w-[90%] min-w-[250px]  max-h-[400px] md:max-h-fit rounded-md pb-4 mx-5 md:my-5">
+    <div className="relative flex flex-col border-2 md:max-w-[90%] min-w-[250px] max-h-[420px] md:max-h-fit rounded-md pb-4 mx-5 md:my-5">
       <img className="absolute right-2 top-2" src={"/assets/heart.svg"} />
       <img className="object-cover" src={imgSrc} />
       <h1 className="w-2/3 my-2 font-medium xl:text-xl px-4 md:text-md lg:text-lg sm:text-sm xs:text-xs">
         {header}
       </h1>
-      <div className="flex items-center">
+      <div className="flex items-center pb-4">
         <img
           src="/assets/locationLogo.png"
           className="object-contain ml-5 mr-2 w-4"
@@ -83,7 +83,7 @@ function TopCollege() {
 
   return (
     <div className="flex justify-center md:my-6 relative ">
-      <div className="no-scrollbar flex overflow-x-auto py-4 scroll-smooth scrollbar">
+      <div className="no-scrollbar flex overflow-x-auto py-5 scroll-smooth scrollbar">
         {collegeItems.map((item, index) => (
           <TopCollegeItems
             key={index}
