@@ -31,7 +31,7 @@ function contact() {
               className="border-2 md:min-w-[70%] min-h-[200px]"
               //   width="984"
               //   height="240"
-              allowfullscreen=""
+              allowFullScreen=""
               loading="lazy"
             ></iframe>
             <div className="flex flex-col mt-5 md:mt-0 mx-1 md:mx-auto text-sm md:text-base">
