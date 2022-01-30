@@ -10,7 +10,6 @@ import { useState } from "react";
 import TopCollege from "../components/TopCollege";
 import Footer from "../components/Footer";
 function scholarship() {
-  const [index, setIndex] = useState(0);
   return (
     <>
       <Head>
@@ -38,7 +37,7 @@ function scholarship() {
             Related News
           </h1>
           {/* News Card */}
-          <NewsCard index={index} setIndex={setIndex} />
+          <NewsCard />
         </section>
         <section>
           <h1 className="text-dark-500 font-medium text-xl md:text-3xl my-5 md:my-[3rem]">
