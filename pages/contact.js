@@ -46,7 +46,7 @@ function contact() {
               </p>
               <br />
               <br />
-              <p className="my-3 flex md:mx-5 text-dark-500">
+              <p className="my-1 md:my-3 flex md:mx-5 text-dark-500">
                 <span className="min-w-[100px] md:min-w-auto md:w-[90px] text-dark-200 font-medium">
                   Fax:{" "}
                 </span>
