@@ -39,7 +39,6 @@ module.exports = {
         }
       },
       backgroundColor:["active"],
-    },
     height: {
       '237':'15rem',
       '28': '28rem',
@@ -49,5 +48,10 @@ module.exports = {
         "hero-pattern": "url('/assets/bannerCollege.png')",
       },
     },
-  plugins: [],
+
+  },
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
+
 };

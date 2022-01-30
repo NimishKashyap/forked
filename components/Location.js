@@ -67,54 +67,54 @@ function Location(){
         {/* mobile screens */}
 
         <div className="flex gap-8 sm:hidden flex-col">
-        <div className="flex gap-8 overflow-x-scroll scrollbar-hide ">
-            <div className="w-48 flex justify-center items-center flex-col">
+        <div className="flex gap-0 overflow-x-scroll scrollbar-hide ">
+            <div className="w-48 flex justify-center items-center flex-col shrink-0">
                 <Image src="/location/1.svg" alt="stream" width="109px" height="95px"/>
                 <p className="text-lg font-normal text-dark-500">Kochi</p>
             </div>
-            <div className="w-48 flex justify-center items-center flex-col">
+            <div className="w-48 flex justify-center items-center flex-col shrink-0">
                 <Image src="/location/2.svg" alt="stream" width="108px" height="100px"/>
                 <p className="text-lg font-normal text-dark-500">Delhi</p>
             </div>
-            <div className="w-48 flex justify-center items-center flex-col">
+            <div className="w-48 flex justify-center items-center flex-col shrink-0">
                 <Image src="/location/3.svg" alt="stream" width="141px" height="95px"/>
                 <p className="text-lg font-normal text-dark-500">Shimla</p>
             </div>
-            <div className="w-48 flex justify-center items-center flex-col">
+            <div className="w-48 flex justify-center items-center flex-col shrink-0">
                 <Image src="/location/4.svg" alt="stream" width="140px" height="95"/>
                 <p className="text-lg font-normal text-dark-500">Mumbi</p>
             </div>
-            <div className="w-48 flex justify-center items-center flex-col">
+            <div className="w-48 flex justify-center items-center flex-col shrink-0">
                 <Image src="/location/5.svg" alt="stream" width="162px" height="95px"/>
                 <p className="text-lg font-normal text-dark-500">Kolkata</p>
             </div>
-            <div className="w-48 flex justify-center items-center flex-col">
+            <div className="w-48 flex justify-center items-center flex-col shrink-0">
                 <Image src="/location/6.svg" alt="stream" width="135px" height="95px"/>
                 <p className="text-lg font-normal text-dark-500">Shimla</p>
             </div>
             </div>
-            <div className="flex gap-8 overflow-x-scroll scrollbar-hide ">
-            <div className="w-48 flex justify-center items-center flex-col">
+            <div className="flex gap-0 overflow-x-scroll scrollbar-hide ">
+            <div className="w-48 flex justify-center items-center flex-col shrink-0">
                 <Image src="/location/1.svg" alt="stream" width="109px" height="95px"/>
                 <p className="text-lg font-normal text-dark-500">Kochi</p>
             </div>
-            <div className="w-48 flex justify-center items-center flex-col">
+            <div className="w-48 flex justify-center items-center flex-col shrink-0">
                 <Image src="/location/2.svg" alt="stream" width="108px" height="100px"/>
                 <p className="text-lg font-normal text-dark-500">Delhi</p>
             </div>
-            <div className="w-48 flex justify-center items-center flex-col">
+            <div className="w-48 flex justify-center items-center flex-col shrink-0">
                 <Image src="/location/3.svg" alt="stream" width="141px" height="95px"/>
                 <p className="text-lg font-normal text-dark-500">Shimla</p>
             </div>
-            <div className="w-48 flex justify-center items-center flex-col">
+            <div className="w-48 flex justify-center items-center flex-col shrink-0">
                 <Image src="/location/4.svg" alt="stream" width="140px" height="95"/>
                 <p className="text-lg font-normal text-dark-500">Mumbi</p>
             </div>
-            <div className="w-48 flex justify-center items-center flex-col">
+            <div className="w-48 flex justify-center items-center flex-col shrink-0">
                 <Image src="/location/5.svg" alt="stream" width="162px" height="95px"/>
                 <p className="text-lg font-normal text-dark-500">Kolkata</p>
             </div>
-            <div className="w-48 flex justify-center items-center flex-col">
+            <div className="w-48 flex justify-center items-center flex-col shrink-0">
                 <Image src="/location/6.svg" alt="stream" width="135px" height="95px"/>
                 <p className="text-lg font-normal text-dark-500">Shimla</p>
             </div>

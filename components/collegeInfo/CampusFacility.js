@@ -1,7 +1,79 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Image from "next/image"
 
 function CampusFacility() {
+    const [girlsHostel,setGirlsHostel]=useState(true);
+    const [boysHostel,setBoysHostel]=useState(false);
+    const [atm,setAtm]=useState(false);
+    const [gym,setGym]=useState(false);
+    const [library,setLibrary]=useState(false);
+    const [cafeteria,setCafeteria]=useState(false);
+    const [auditorium,setAuditorium]=useState(false);
+
+    const handleGirlsHostel=()=>{
+        setBoysHostel(false);
+        setGirlsHostel(true);
+        setAtm(false);
+        setGym(false);
+        setLibrary(false);
+        setCafeteria(false);
+        setAuditorium(false);
+    }
+    const handleBoysHostel=()=>{
+        setBoysHostel(true);
+        setGirlsHostel(false);
+        setAtm(false);
+        setGym(false);
+        setLibrary(false);
+        setCafeteria(false);
+        setAuditorium(false);
+    }
+    const handleAtm=()=>{
+        setBoysHostel(false);
+        setGirlsHostel(false);
+        setAtm(true);
+        setGym(false);
+        setLibrary(false);
+        setCafeteria(false);
+        setAuditorium(false);
+    }
+    const handleGym=()=>{
+        setBoysHostel(false);
+        setGirlsHostel(false);
+        setAtm(false);
+        setGym(true);
+        setLibrary(false);
+        setCafeteria(false);
+        setAuditorium(false);
+    }
+    const handleLibrary=()=>{
+        setBoysHostel(false);
+        setGirlsHostel(false);
+        setAtm(false);
+        setGym(false);
+        setLibrary(true);
+        setCafeteria(false);
+        setAuditorium(false);
+    }
+    const handleCafeteria=()=>{
+        setBoysHostel(false);
+        setGirlsHostel(false);
+        setAtm(false);
+        setGym(false);
+        setLibrary(false);
+        setCafeteria(true);
+        setAuditorium(false);
+    }
+    const handleAuditorium=()=>{
+        setBoysHostel(false);
+        setGirlsHostel(false);
+        setAtm(false);
+        setGym(false);
+        setLibrary(false);
+        setCafeteria(false);
+        setAuditorium(true);
+    }
+
   return <div className="mx-4 sm:mx-12 my-6">
       <h1 className="text-2xl text-dark-500">Campus Facilities</h1>
       <div className="flex gap-6 my-6 justify-between overflow-x-scroll scrollbar-hide">
@@ -31,14 +103,14 @@ function CampusFacility() {
                 </div>
       </div>
       <div className="mt-10">
-      <div className="hidden lg:flex border-b-2 rounded-sm border-borderColor-500 gap-3 my-4 w-fit -mb-0">
-            <p className="font-normal text-base text-dark-200">Girls Hostel</p>
-            <p className="font-normal text-base text-dark-200">Boys Hostel</p>
-            <p className="font-normal text-base text-dark-200">ATMs</p>
-            <p className="font-normal text-base text-dark-200">GYM</p>
-            <p className="font-normal text-base text-dark-200">Library</p>
-            <p className="font-normal text-base text-dark-200">Cafeteria</p>
-            <p className="font-normal text-base text-dark-200">Auditorium</p>
+      <div className="hidden lg:flex rounded-sm gap-3 my-4 w-fit -mb-0">
+            <p onClick={handleGirlsHostel} className={`text-base ${girlsHostel?"border-b-2 border-primary-500 rounded-sm font-bold text-dark-500":"text-dark-200 font-normal"}`}>Girls Hostel</p>
+            <p onClick={handleBoysHostel} className={`text-base ${boysHostel?"border-b-2 border-primary-500 rounded-sm font-bold text-dark-500":"text-dark-200 font-normal"}`}>Boys Hostel</p>
+            <p onClick={handleAtm} className={`text-base ${atm?"border-b-2 border-primary-500 rounded-sm font-bold text-dark-500":"text-dark-200 font-normal"}`}>ATMs</p>
+            <p onClick={handleGym} className={`text-base ${gym?"border-b-2 border-primary-500 rounded-sm font-bold text-dark-500":"text-dark-200 font-normal"}`}>GYM</p>
+            <p onClick={handleLibrary} className={`text-base ${library?"border-b-2 border-primary-500 rounded-sm font-bold text-dark-500":"text-dark-200 font-normal"}`}>Library</p>
+            <p onClick={handleCafeteria} className={`text-base ${cafeteria?"border-b-2 border-primary-500 rounded-sm font-bold text-dark-500":"text-dark-200 font-normal"}`}>Cafeteria</p>
+            <p onClick={handleAuditorium} className={`text-base ${auditorium?"border-b-2 border-primary-500 rounded-sm font-bold text-dark-500":"text-dark-200 font-normal"}`}>Auditorium</p>
       </div>
       <div className="flex gap-6 justify-start flex-col-reverse lg:flex-row">
       <div className="flex-1 flex flex-col justify-start mt-2">

@@ -53,11 +53,31 @@ function ManagementColleges() {
               </div>
           
       </div>
-      <div className="lg:flex justify-end mt-7 hidden">
+      <div className="lg:flex justify-between mt-7 hidden">
+  <div className="flex gap-4">
+    <div className="flex box-border rounded border border-borderColor-500 py-2 px-3">
+      <Image src="/management/cross.svg" alt="" width="20px" height="20px" /><p className="text-base text-dark-500 ml-1">Bachelors</p>
+    </div>
+    <div className="flex box-border rounded border border-borderColor-500 py-2 px-3">
+      <Image src="/management/cross.svg" alt="" width="20px" height="20px" /><p className="text-base text-dark-500 ml-1">BBA</p>
+    </div>
+    <div className="flex box-border rounded border border-borderColor-500 py-2 px-3">
+      <Image src="/management/cross.svg" alt="" width="20px" height="20px" /><p className="text-base text-dark-500 ml-1">Gujrat</p>
+    </div>
+    <div className="flex box-border rounded border border-borderColor-500 py-2 px-3">
+      <Image src="/management/cross.svg" alt="" width="20px" height="20px" /><p className="text-base text-dark-500 ml-1">Ahmedabad</p>
+    </div>
+    <div className="flex box-border rounded border border-borderColor-500 py-2 px-3">
+      <Image src="/management/cross.svg" alt="" width="20px" height="20px" /><p className="text-base text-dark-500 ml-1">1-2 L</p>
+    </div>
+  </div>
           <button className="text-gray-500 uppercase text-sm border border-primary-500 rounded box-border py-2 px-6">Reset All</button>
           </div>
           <div className="my-10 gap-6 md:grid-cols-2 grid xl:grid-cols-3">
-            <div className="w-80 md:w-96 shadow-md mb-6 rounded">
+
+
+
+            <div className="w-80 md:w-96 shadow-md mb-6 rounded relative">
               <div>
                 <Image src="/management/srm.png" alt="srm" width="600px" height="140px" />
               </div>
@@ -104,10 +124,15 @@ function ManagementColleges() {
                       <p className="text-dark-500 text-xs">₹42L</p>
                     </div>
                   </div>
+                  <div className="absolute right-3 top-2"><Image src="/colleges/heart.svg" alt="" width="35px" height="35px" /></div>
+         
                 </div>
               </div>
           </div>
-            <div className="w-80 md:w-96 shadow-md mb-6 rounded">
+
+
+
+            <div className="w-80 md:w-96 shadow-md mb-6 rounded relative">
               <div>
                 <Image src="/management/srm.png" alt="srm" width="600px" height="140px" />
               </div>
@@ -154,10 +179,12 @@ function ManagementColleges() {
                       <p className="text-dark-500 text-xs">₹42L</p>
                     </div>
                   </div>
+                  <div className="absolute right-3 top-2"><Image src="/colleges/heart.svg" alt="" width="35px" height="35px" /></div>
+         
                 </div>
               </div>
           </div>
-            <div className="w-80 md:w-96 shadow-md mb-6 rounded">
+            <div className="w-80 md:w-96 shadow-md mb-6 rounded relative">
               <div>
                 <Image src="/management/srm.png" alt="srm" width="600px" height="140px" />
               </div>
@@ -204,10 +231,12 @@ function ManagementColleges() {
                       <p className="text-dark-500 text-xs">₹42L</p>
                     </div>
                   </div>
+                  <div className="absolute right-3 top-2"><Image src="/colleges/heart.svg" alt="" width="35px" height="35px" /></div>
+         
                 </div>
               </div>
           </div>
-            <div className="w-80 md:w-96 shadow-md mb-6 rounded">
+            <div className="w-80 md:w-96 shadow-md mb-6 rounded relative">
               <div>
                 <Image src="/management/srm.png" alt="srm" width="600px" height="140px" />
               </div>
@@ -254,10 +283,12 @@ function ManagementColleges() {
                       <p className="text-dark-500 text-xs">₹42L</p>
                     </div>
                   </div>
+                  <div className="absolute right-3 top-2"><Image src="/colleges/heart.svg" alt="" width="35px" height="35px" /></div>
+         
                 </div>
               </div>
           </div>
-            <div className="w-80 md:w-96 shadow-md mb-6 rounded">
+            <div className="w-80 md:w-96 shadow-md mb-6 rounded relative">
               <div>
                 <Image src="/management/srm.png" alt="srm" width="600px" height="140px" />
               </div>
@@ -304,10 +335,12 @@ function ManagementColleges() {
                       <p className="text-dark-500 text-xs">₹42L</p>
                     </div>
                   </div>
+                  <div className="absolute right-3 top-2"><Image src="/colleges/heart.svg" alt="" width="35px" height="35px" /></div>
+         
                 </div>
               </div>
           </div>
-            <div className="w-80 md:w-96 shadow-md mb-6 rounded">
+            <div className="w-80 md:w-96 shadow-md mb-6 rounded relative">
               <div>
                 <Image src="/management/srm.png" alt="srm" width="600px" height="140px" />
               </div>
@@ -354,10 +387,12 @@ function ManagementColleges() {
                       <p className="text-dark-500 text-xs">₹42L</p>
                     </div>
                   </div>
+                  <div className="absolute right-3 top-2"><Image src="/colleges/heart.svg" alt="" width="35px" height="35px" /></div>
+         
                 </div>
               </div>
           </div>
-            <div className="w-80 md:w-96 shadow-md mb-6 rounded">
+            <div className="w-80 md:w-96 shadow-md mb-6 rounded relative">
               <div>
                 <Image src="/management/srm.png" alt="srm" width="600px" height="140px" />
               </div>
@@ -404,10 +439,12 @@ function ManagementColleges() {
                       <p className="text-dark-500 text-xs">₹42L</p>
                     </div>
                   </div>
+                  <div className="absolute right-3 top-2"><Image src="/colleges/heart.svg" alt="" width="35px" height="35px" /></div>
+         
                 </div>
               </div>
           </div>
-            <div className="w-80 md:w-96 shadow-md mb-6 rounded">
+            <div className="w-80 md:w-96 shadow-md mb-6 rounded relative">
               <div>
                 <Image src="/management/srm.png" alt="srm" width="600px" height="140px" />
               </div>
@@ -454,10 +491,12 @@ function ManagementColleges() {
                       <p className="text-dark-500 text-xs">₹42L</p>
                     </div>
                   </div>
+                  <div className="absolute right-3 top-2"><Image src="/colleges/heart.svg" alt="" width="35px" height="35px" /></div>
+         
                 </div>
               </div>
           </div>
-            <div className="w-80 md:w-96 shadow-md mb-6 rounded">
+            <div className="w-80 md:w-96 shadow-md mb-6 rounded relative">
               <div>
                 <Image src="/management/srm.png" alt="srm" width="600px" height="140px" />
               </div>
@@ -504,10 +543,12 @@ function ManagementColleges() {
                       <p className="text-dark-500 text-xs">₹42L</p>
                     </div>
                   </div>
+                  <div className="absolute right-3 top-2"><Image src="/colleges/heart.svg" alt="" width="35px" height="35px" /></div>
+         
                 </div>
               </div>
           </div>
-            <div className="w-80 md:w-96 shadow-md mb-6 rounded">
+            <div className="w-80 md:w-96 shadow-md mb-6 rounded relative">
               <div>
                 <Image src="/management/srm.png" alt="srm" width="600px" height="140px" />
               </div>
@@ -554,10 +595,12 @@ function ManagementColleges() {
                       <p className="text-dark-500 text-xs">₹42L</p>
                     </div>
                   </div>
+                  <div className="absolute right-3 top-2"><Image src="/colleges/heart.svg" alt="" width="35px" height="35px" /></div>
+         
                 </div>
               </div>
           </div>
-            <div className="w-80 md:w-96 shadow-md mb-6 rounded">
+            <div className="w-80 md:w-96 shadow-md mb-6 rounded relative">
               <div>
                 <Image src="/management/srm.png" alt="srm" width="600px" height="140px" />
               </div>
@@ -604,10 +647,12 @@ function ManagementColleges() {
                       <p className="text-dark-500 text-xs">₹42L</p>
                     </div>
                   </div>
+                  <div className="absolute right-3 top-2"><Image src="/colleges/heart.svg" alt="" width="35px" height="35px" /></div>
+         
                 </div>
               </div>
           </div>
-            <div className="w-80 md:w-96 shadow-md mb-6 rounded">
+            <div className="w-80 md:w-96 shadow-md mb-6 rounded relative">
               <div>
                 <Image src="/management/srm.png" alt="srm" width="600px" height="140px" />
               </div>
@@ -654,6 +699,8 @@ function ManagementColleges() {
                       <p className="text-dark-500 text-xs">₹42L</p>
                     </div>
                   </div>
+                  <div className="absolute right-3 top-2"><Image src="/colleges/heart.svg" alt="" width="35px" height="35px" /></div>
+         
                 </div>
               </div>
           </div>
