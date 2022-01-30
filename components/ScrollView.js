@@ -46,7 +46,7 @@ function ScrollView() {
           name={"ADMISSION"}
         />
         <ScrollViewItems icon={<CutOffIcon />} name={"CUTOFFS"} />
-        <ScrollViewItems icon={<Scholarship />} name={"SCHOLARSHIPS"} />
+        <ScrollViewItems href={"/scholarship"} icon={<Scholarship />} name={"SCHOLARSHIPS"} />
         <ScrollViewItems icon={<PlacementIcon />} name={"PLACEMENTS"} />
         <ScrollViewItems icon={<CampusIcon />} name={"CAMPUS"} />
         <ScrollViewItems icon={<FacultyIcon />} name={"FACULTY"} />
