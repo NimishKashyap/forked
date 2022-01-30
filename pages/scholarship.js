@@ -4,7 +4,13 @@ import Navbar from "../components/Navbar";
 import ScholarshipComp from "../components/Scholarship/ScholarshipComp";
 import ScrollView from "../components/ScrollView";
 import styles from "../styles/Home.module.css";
+import FAQDropDown from "../components/FAQDropDown";
+import NewsCard from "../components/NewsCard";
+import { useState } from "react";
+import TopCollege from "../components/TopCollege";
+import Footer from "../components/Footer";
 function scholarship() {
+  const [index, setIndex] = useState(0);
   return (
     <>
       <Head>
@@ -20,7 +26,28 @@ function scholarship() {
         </p>
         <ScrollView />
         <ScholarshipComp />
+        <section>
+          <h1 className="text-dark-500 text-xl mt-5 md:text-3xl mb-5">FAQs</h1>
+          <div className="flex flex-col md:flex-row justify-around md:h-[20rem] items-stretch">
+            <FAQDropDown />
+            <FAQDropDown />
+          </div>
+        </section>
+        <section>
+          <h1 className="text-dark-500 text-lg md:text-3xl my-5">
+            Related News
+          </h1>
+          {/* News Card */}
+          <NewsCard index={index} setIndex={setIndex} />
+        </section>
+        <section>
+          <h1 className="text-dark-500 text-xl md:text-3xl mx-5 my-[3rem]">
+            Top MBA Colleges
+          </h1>
+          <TopCollege />
+        </section>
       </main>
+      <Footer />
     </>
   );
 }
