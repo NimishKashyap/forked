@@ -14,7 +14,7 @@ function Location(){
             <input type="text" placeholder="Search here..." className="flex-1 outline-0"/>
         </div>
         </div>
-        <div className="grid xl:grid-cols-6 lg:grid-cols-5 sm:grid-cols-4 grid-cols-1 items-center justify-left gap-4">
+        <div className="hidden sm:grid xl:grid-cols-6 lg:grid-cols-5 sm:grid-cols-4 grid-cols-2 items-center justify-left gap-4">
             <div className="w-48 flex justify-center items-center flex-col">
                 <Image src="/location/1.svg" alt="stream" width="109px" height="95px"/>
                 <p className="text-lg font-normal text-dark-500">Kochi</p>
@@ -64,6 +64,62 @@ function Location(){
                 <p className="text-lg font-normal text-dark-500">Ahmedabad</p>
             </div>
         </div>
+        {/* mobile screens */}
+
+        <div className="flex gap-8 sm:hidden flex-col">
+        <div className="flex gap-0 overflow-x-scroll scrollbar-hide ">
+            <div className="w-48 flex justify-center items-center flex-col shrink-0">
+                <Image src="/location/1.svg" alt="stream" width="109px" height="95px"/>
+                <p className="text-lg font-normal text-dark-500">Kochi</p>
+            </div>
+            <div className="w-48 flex justify-center items-center flex-col shrink-0">
+                <Image src="/location/2.svg" alt="stream" width="108px" height="100px"/>
+                <p className="text-lg font-normal text-dark-500">Delhi</p>
+            </div>
+            <div className="w-48 flex justify-center items-center flex-col shrink-0">
+                <Image src="/location/3.svg" alt="stream" width="141px" height="95px"/>
+                <p className="text-lg font-normal text-dark-500">Shimla</p>
+            </div>
+            <div className="w-48 flex justify-center items-center flex-col shrink-0">
+                <Image src="/location/4.svg" alt="stream" width="140px" height="95"/>
+                <p className="text-lg font-normal text-dark-500">Mumbi</p>
+            </div>
+            <div className="w-48 flex justify-center items-center flex-col shrink-0">
+                <Image src="/location/5.svg" alt="stream" width="162px" height="95px"/>
+                <p className="text-lg font-normal text-dark-500">Kolkata</p>
+            </div>
+            <div className="w-48 flex justify-center items-center flex-col shrink-0">
+                <Image src="/location/6.svg" alt="stream" width="135px" height="95px"/>
+                <p className="text-lg font-normal text-dark-500">Shimla</p>
+            </div>
+            </div>
+            <div className="flex gap-0 overflow-x-scroll scrollbar-hide ">
+            <div className="w-48 flex justify-center items-center flex-col shrink-0">
+                <Image src="/location/1.svg" alt="stream" width="109px" height="95px"/>
+                <p className="text-lg font-normal text-dark-500">Kochi</p>
+            </div>
+            <div className="w-48 flex justify-center items-center flex-col shrink-0">
+                <Image src="/location/2.svg" alt="stream" width="108px" height="100px"/>
+                <p className="text-lg font-normal text-dark-500">Delhi</p>
+            </div>
+            <div className="w-48 flex justify-center items-center flex-col shrink-0">
+                <Image src="/location/3.svg" alt="stream" width="141px" height="95px"/>
+                <p className="text-lg font-normal text-dark-500">Shimla</p>
+            </div>
+            <div className="w-48 flex justify-center items-center flex-col shrink-0">
+                <Image src="/location/4.svg" alt="stream" width="140px" height="95"/>
+                <p className="text-lg font-normal text-dark-500">Mumbi</p>
+            </div>
+            <div className="w-48 flex justify-center items-center flex-col shrink-0">
+                <Image src="/location/5.svg" alt="stream" width="162px" height="95px"/>
+                <p className="text-lg font-normal text-dark-500">Kolkata</p>
+            </div>
+            <div className="w-48 flex justify-center items-center flex-col shrink-0">
+                <Image src="/location/6.svg" alt="stream" width="135px" height="95px"/>
+                <p className="text-lg font-normal text-dark-500">Shimla</p>
+            </div>
+        </div>
+</div>
     </div>
     );
 }
