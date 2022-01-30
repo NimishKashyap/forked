@@ -6,7 +6,7 @@ function ScholarshipComp() {
   return (
     <section className="md:w-full lg:w-full text-justify md:my-[3rem]">
       <h1 className="text-3xl text-dark-500 mt-5 mb-5">Scholarships</h1>
-      <div className="flex items-end my-4">
+      <div className="flex items-end my-5">
         <img className="h-16 md:h-auto" src="/collegeInfo/line.png" alt="" />
 
         <div className="sm:mb-0 mb-1 mx-3">

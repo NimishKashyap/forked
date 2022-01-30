@@ -34,14 +34,14 @@ function scholarship() {
           </div>
         </section>
         <section>
-          <h1 className="text-dark-500 text-lg md:text-3xl my-5">
+          <h1 className="text-dark-500 font-medium text-xl md:text-3xl my-5">
             Related News
           </h1>
           {/* News Card */}
           <NewsCard index={index} setIndex={setIndex} />
         </section>
         <section>
-          <h1 className="text-dark-500 text-xl md:text-3xl mx-5 my-[3rem]">
+          <h1 className="text-dark-500 font-medium text-xl md:text-3xl my-5 md:my-[3rem]">
             Top MBA Colleges
           </h1>
           <TopCollege />
