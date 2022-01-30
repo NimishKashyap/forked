@@ -101,7 +101,7 @@ function contact() {
               </span>
             </div>
             <div className="mb-5">
-              <h1 className="text-dark-500 text-2xl my-5">RTI - Details</h1>
+              <h1 className="text-dark-500 text-2xl mt-5 md:mt-0 mb-5">RTI - Details</h1>
               <p>
                 Contact details of Information Officer appointed under Right to
                 Information Act, 2005.
