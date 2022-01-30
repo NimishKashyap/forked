@@ -2,6 +2,16 @@ import React from "react";
 import ScrollViewItems from "./ScrollViewItems";
 import Vector from "./Icons/Vector";
 import CaretIcon from "./Icons/CaretIcon";
+import CourseFeeIcon from "./Icons/CourseFeeIcon";
+import AdmissionIcon from "./Icons/AdmissionIcon";
+import CutOffIcon from "./Icons/CutOffIcon";
+import Scholarship from "./Icons/Scholarship";
+import PlacementIcon from "./Icons/PlacementIcon";
+import CampusIcon from "./Icons/CampusIcon";
+import FacultyIcon from "./Icons/FacultyIcon";
+import Clubs from "./Icons/Clubs";
+import AchievementIcon from "./Icons/AchievementIcon";
+import Link from "next/link";
 function ScrollView() {
   const handleScroll = (no) => {
     const scroll = document.querySelector(".scrollview-scroll");
@@ -23,19 +33,25 @@ function ScrollView() {
       >
         <CaretIcon className={"primary-caret"} />
       </span>
-      <ul className="scrollview-scroll relative flex mx-[25px] md:mx-[5rem] justify-start md:max-w-[80%] xl:max-w-full md:justify-center overflow-auto scroll-smooth rounded-lg p-3 no-scrollbar">
+      <ul className="scrollview-scroll relative flex mx-[25px]  justify-start xl:max-w-full md:justify-start overflow-auto scroll-smooth rounded-lg p-3 no-scrollbar">
         <ScrollViewItems icon={<Vector />} name={"COLLEGE INFO"} />
-        <ScrollViewItems icon={<Vector />} name={"COLLEGE INFO"} />
-        <ScrollViewItems icon={<Vector />} name={"COLLEGE INFO"} />
-        <ScrollViewItems icon={<Vector />} name={"COLLEGE INFO"} />
-        <ScrollViewItems icon={<Vector />} name={"COLLEGE INFO"} />
-        <ScrollViewItems icon={<Vector />} name={"COLLEGE INFO"} />
-        <ScrollViewItems icon={<Vector />} name={"COLLEGE INFO"} />
-        <ScrollViewItems icon={<Vector />} name={"COLLEGE INFO"} />
-        <ScrollViewItems icon={<Vector />} name={"COLLEGE INFO"} />
-        <ScrollViewItems icon={<Vector />} name={"COLLEGE INFO"} />
-        <ScrollViewItems icon={<Vector />} name={"COLLEGE INFO"} />
-        <ScrollViewItems icon={<Vector />} name={"COLLEGE INFO"} />
+        <ScrollViewItems
+          href={"/courses"}
+          icon={<CourseFeeIcon />}
+          name={"COURSE & FEES"}
+        />
+        <ScrollViewItems
+          href={"/admission"}
+          icon={<AdmissionIcon />}
+          name={"ADMISSION"}
+        />
+        <ScrollViewItems icon={<CutOffIcon />} name={"CUTOFFS"} />
+        <ScrollViewItems icon={<Scholarship />} name={"SCHOLARSHIPS"} />
+        <ScrollViewItems icon={<PlacementIcon />} name={"PLACEMENTS"} />
+        <ScrollViewItems icon={<CampusIcon />} name={"CAMPUS"} />
+        <ScrollViewItems icon={<FacultyIcon />} name={"FACULTY"} />
+        <ScrollViewItems icon={<Clubs />} name={"CLUBS"} />
+        <ScrollViewItems icon={<AchievementIcon />} name={"ACHIEVEMENTS"} />
       </ul>
     </div>
   );

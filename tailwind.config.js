@@ -48,8 +48,10 @@ module.exports = {
         "hero-pattern": "url('/assets/bannerCollege.png')",
       },
     },
+
   },
   plugins: [
     require('tailwind-scrollbar-hide')
   ],
+
 };
