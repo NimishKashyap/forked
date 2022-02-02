@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function StepTwo() {
+function StepTwo({ compare, setCompare }) {
   const [stepTwoState, setStepTwoState] = useState({
     all: false,
     details: false,
@@ -13,6 +13,9 @@ function StepTwo() {
     cost: false,
     courseOffered: false,
   });
+  const handleCompare = () => {
+    setCompare(true);
+  };
   const handleCheck = (id) => {
     switch (id) {
       case 1:
@@ -87,16 +90,18 @@ function StepTwo() {
 
   return (
     <div className="flex items-start my-5">
-      <img src="/Compare/Step1.png" className="my-5" alt="" />
+      <img src="/Compare/Step1.png" className="my-5 h-[12rem]" alt="" />
       <div className="flex flex-col w-full">
-        <div className="flex my-5 items-start justify-start">
-          <h1 className="mx-5 text-dark-500 text-xl md:text-2xl">Step 02 : </h1>
-          <p className="my-1 text-dark-200 text-xl">
-            Select the criteria/criterion you want the comparison to be based on
-            and hit compare
-          </p>{" "}
+        <div className="flex flex-col md:flex-row my-5 items-start justify-start">
+          <h1 className="mx-5 text-dark-500 text-md md:text-2xl">
+            Step 02 :
+            <span className="my-1 w-[300px] mx-2 md:w-auto text-dark-200 text-sm md:text-xl">
+              Select the criteria/criterion you want the comparison to be based
+              on and hit compare
+            </span>{" "}
+          </h1>
         </div>
-        <div className="grid grid-cols-5 gap-10 my-10 mx-[10rem]">
+        <div className="grid grid-cols-3 md:grid-cols-5 gap-10 my-10 md:mx-[10rem]">
           <div
             className="flex justify-center relative"
             onClick={() => handleCheck(1)}
@@ -106,7 +111,7 @@ function StepTwo() {
               src={`/Compare/${
                 stepTwoState.details ? "box-check.png" : "box-uncheck.png"
               }`}
-              className="absolute top-0 right-0"
+              className="h-4 md:h-auto absolute top-[-0.9rem] md:top-0 right-0"
             />
           </div>{" "}
           <div
@@ -118,7 +123,7 @@ function StepTwo() {
               src={`/Compare/${
                 stepTwoState.location ? "box-check.png" : "box-uncheck.png"
               }`}
-              className="absolute top-0 right-0"
+              className="h-4 md:h-auto absolute top-[-0.9rem] md:top-0 right-0"
             />
           </div>{" "}
           <div
@@ -130,7 +135,7 @@ function StepTwo() {
               src={`/Compare/${
                 stepTwoState.ranking ? "box-check.png" : "box-uncheck.png"
               }`}
-              className="absolute top-0 right-0"
+              className="h-4 md:h-auto absolute top-[-0.9rem] md:top-0 right-0"
             />
           </div>{" "}
           <div
@@ -142,7 +147,7 @@ function StepTwo() {
               src={`/Compare/${
                 stepTwoState.placement ? "box-check.png" : "box-uncheck.png"
               }`}
-              className="absolute top-0 right-0"
+              className="h-4 md:h-auto absolute top-[-0.9rem] md:top-0 right-0"
             />
           </div>{" "}
           <div
@@ -154,7 +159,7 @@ function StepTwo() {
               src={`/Compare/${
                 stepTwoState.exams ? "box-check.png" : "box-uncheck.png"
               }`}
-              className="absolute top-0 right-0"
+              className="h-4 md:h-auto absolute top-[-0.9rem] md:top-0 right-0"
             />
           </div>{" "}
           <div
@@ -166,7 +171,7 @@ function StepTwo() {
               src={`/Compare/${
                 stepTwoState.cutOffs ? "box-check.png" : "box-uncheck.png"
               }`}
-              className="absolute top-0 right-0"
+              className="h-4 md:h-auto absolute top-[-0.9rem] md:top-0 right-0"
             />
           </div>{" "}
           <div
@@ -178,7 +183,7 @@ function StepTwo() {
               src={`/Compare/${
                 stepTwoState.facilities ? "box-check.png" : "box-uncheck.png"
               }`}
-              className="absolute top-0 right-0"
+              className="h-4 md:h-auto absolute top-[-0.9rem] md:top-0 right-0"
             />
           </div>{" "}
           <div
@@ -190,7 +195,7 @@ function StepTwo() {
               src={`/Compare/${
                 stepTwoState.cost ? "box-check.png" : "box-uncheck.png"
               }`}
-              className="absolute top-0 right-0"
+              className="h-4 md:h-auto absolute top-[-0.9rem] md:top-0 right-0"
             />
           </div>{" "}
           <div
@@ -202,19 +207,21 @@ function StepTwo() {
               src={`/Compare/${
                 stepTwoState.courseOffered ? "box-check.png" : "box-uncheck.png"
               }`}
-              className="absolute top-0 right-0"
+              className="h-4 md:h-auto absolute top-[-0.9rem] md:top-0 right-0"
             />
           </div>{" "}
-          <div
-            className="py-5 ml-[4rem]"
-            onClick={() => handleCheck(10)}
-          >
-            <button className="px-5 py-2 rounded-lg text-dark-200 border-2 border-primary-500">
+          <div className="py-5 md:ml-[4rem]" onClick={() => handleCheck(10)}>
+            <button className="w-[100px] md:w-[150px] md:px-5 py-2 md:py-3 text-sm md:text-base rounded-lg text-dark-200 border-2 border-primary-500">
               Select all
             </button>
           </div>{" "}
         </div>
-        <button className="mx-auto py-2 px-5 bg-primary-500 text-white rounded-md">Compare</button>
+        <button
+          onClick={() => handleCompare()}
+          className="mx-auto py-2 px-5 bg-primary-500 text-white rounded-md"
+        >
+          Compare
+        </button>
       </div>
     </div>
   );
