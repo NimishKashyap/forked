@@ -228,7 +228,7 @@ function StepThree({ compare, setCompare, stepOneState }) {
           </>
           <>
             <p className="bg-gray-100 md:bg-white md:border-b-2 text-dark-200 font-medium pb-2 col-span-2 md:col-span-1">
-              CGPA in Backelor's Degree
+              CGPA in Backelor&apos;s Degree
             </p>
             <p className="md:border-b-2 text-dark-500 text-center">
               9 and above
@@ -238,7 +238,7 @@ function StepThree({ compare, setCompare, stepOneState }) {
           </>
           <>
             <p className="bg-gray-100 md:bg-white md:border-b-2 text-dark-200 font-medium pb-2 col-span-2 md:col-span-1">
-              CGPA in Master's Degree
+              CGPA in Master&apos;s Degree
             </p>
             <p className="md:border-b-2 text-dark-500 text-center">
               9 and above
@@ -390,7 +390,7 @@ function StepThree({ compare, setCompare, stepOneState }) {
           </>
           <>
             <p className="bg-gray-100 md:bg-white md:border-b-2 text-dark-200 font-medium pb-2 col-span-2 md:col-span-1">
-              Average Bachelor's Degree Fees
+              Average Bachelor&apos;s Degree Fees
             </p>
             <p className="md:border-b-2 text-dark-500 text-center">
               $10000 pa.
@@ -400,7 +400,7 @@ function StepThree({ compare, setCompare, stepOneState }) {
           </>
           <>
             <p className="bg-gray-100 md:bg-white md:border-b-2 text-dark-200 font-medium pb-2 col-span-2 md:col-span-1">
-              Average Master's Degree Fees
+              Average Master&apos;s Degree Fees
             </p>
             <p className="md:border-b-2 text-dark-500 text-center">
               $10000 pa.
@@ -472,14 +472,14 @@ function StepThree({ compare, setCompare, stepOneState }) {
           </>
           <>
             <p className="bg-gray-100 md:bg-white md:border-b-2 text-dark-200 font-medium pb-2 col-span-2 md:col-span-1">
-              Median Salary for Bachelor's Degree
+              Median Salary for Bachelor&apos;s Degree
             </p>
             <p className="md:border-b-2 text-dark-500 text-center">$4.5 LPA</p>
             <p className="md:border-b-2"></p>
             <p className="hidden md:border-b-2"></p>
           </>
           <>
-            <p className="bg-gray-100 md:bg-white md:border-b-2 text-dark-200 font-medium pb-2 col-span-2 md:col-span-1">Median Salary for Master's Degree</p>
+            <p className="bg-gray-100 md:bg-white md:border-b-2 text-dark-200 font-medium pb-2 col-span-2 md:col-span-1">Median Salary for Master&apos;s Degree</p>
             <p className="md:border-b-2 text-dark-500 text-center">$4.5 LPA</p>
             <p className="md:border-b-2"></p>
             <p className="hidden md:border-b-2"></p>
@@ -531,13 +531,13 @@ function StepThree({ compare, setCompare, stepOneState }) {
             </div>
           </>
           <>
-            <p className="bg-gray-100 md:bg-white md:border-b-2 text-dark-200 font-medium pb-2 col-span-2 md:col-span-1">Bachelor's Degree</p>
+            <p className="bg-gray-100 md:bg-white md:border-b-2 text-dark-200 font-medium pb-2 col-span-2 md:col-span-1">Bachelor&apos;s Degree</p>
             <p className="md:border-b-2 text-dark-500 text-center">5</p>
             <p className="md:border-b-2"></p>
             <p className="hidden md:border-b-2"> </p>
           </>
           <>
-            <p className="bg-gray-100 md:bg-white md:border-b-2 text-dark-200 font-medium pb-2 col-span-2 md:col-span-1">Master's Degree</p>
+            <p className="bg-gray-100 md:bg-white md:border-b-2 text-dark-200 font-medium pb-2 col-span-2 md:col-span-1">Master&apos;s Degree</p>
             <p className="md:border-b-2 text-dark-500 text-center">7</p>
             <p className="md:border-b-2"></p>
             <p className="hidden md:block md:border-b-2"> </p>
