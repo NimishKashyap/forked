@@ -13,7 +13,7 @@ function StepOne({ stepOneState, setStepOneState, name }) {
           className="my-5 h-[12rem] md:h-auto"
           alt=""
         />
-        <div className="flex flex-col mx-2 text-dark-200">
+        <div className="flex flex-col md:mx-2 text-dark-200 overflow-x-auto">
           <div className="flex my-5 md:items-start md:justify-start ">
             <h1 className="mx-2 md:mx-5 text-dark-500 text-lg md:text-2xl">
               {name ? name : "Step 01"}{" "}
@@ -24,9 +24,9 @@ function StepOne({ stepOneState, setStepOneState, name }) {
               </span>{" "}
             </h1>
           </div>
-          <div className="flex md:mx-[4rem] gap-[5rem] md:my-[2rem] overflow-x-auto px-5">
+          <div className="flex md:mx-[4rem] gap-x-5 md:gap-[5rem] md:my-[2rem] overflow-x-auto px-5">
             {name && (
-              <div className="border-2 relative flex flex-col items-center rounded-lg pb-[100px] px-2">
+              <div className="hidden md:flex border-2 relative flex-col items-center rounded-lg pb-[100px] px-2">
                 <h1 className="text-center text-dark-500 my-5 md:max-w-[60%]">
                   Selected Fields of Comparison
                 </h1>
@@ -57,7 +57,7 @@ function StepOne({ stepOneState, setStepOneState, name }) {
 
             <div>
               <div className="flex rounded-md flex-col items-center md:min-h-[120px] md:max-w-[250px] ">
-                <h3 className="text-dark-500 md:text-2xl mb-5">
+                <h3 className="text-dark-500 text-2xl mb-5">
                   {stepOneState[0].header}
                 </h3>
                 <div className="relative border-2 rounded-lg w-[200px] md:w-full py-5 flex justify-center">
@@ -103,9 +103,9 @@ function StepOne({ stepOneState, setStepOneState, name }) {
                 }}
                 className="cursor-pointer"
               >
-                <div className="flex rounded-md flex-col items-center max-w-[250px]">
-                  <h3 className="text-dark-500 text-2xl mb-5">College 03</h3>
-                  <div className="border-2 rounded-lg py-5 flex flex-col justify-center w-[250px] h-[124px]">
+                <div className="flex rounded-md flex-col items-center md:max-w-[250px]">
+                  <h3 className="opacity-0 md:opacity-100 text-dark-500 text-2xl mb-5">College 03</h3>
+                  <div className="md:border-2 rounded-lg py-5 flex flex-col justify-center w-[120px] md:w-[250px] h-[124px]">
                     <img
                       className="object-contain max-h-10"
                       src="/Compare/PlusIcon.png"

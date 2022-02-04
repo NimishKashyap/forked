@@ -13,7 +13,7 @@ function SearchBarModal({ stepOneState, setStepOneState }) {
       setStepOneState([...stepOneState, addedItem]);
   }
   return (
-    <div className=" mx-4 sm:mx-12 flex w-full items-center justify-center my-6">
+    <div className=" mx-4 sm:mx-12 flex w-full items-center justify-center my-4 md:my-6">
       <div className="border relative border-borderColor w-5/6 md:w-4/6 box-border rounded bg-fadeWhite-500 flex items-center">
         <div className="mx-4 my-2 ">
           <Image
@@ -22,7 +22,7 @@ function SearchBarModal({ stepOneState, setStepOneState }) {
             width="15px"
             height="15px"
           />
-          <p className={`${stepOneState.length===3?"block" : "hidden"} absolute top-[-26px] left-0 text-primary-500 w-full`}>You can compare only 3 colleges at a time. Remove one to add a new college.</p>
+          <p className={`${stepOneState.length>=3?"block" : "hidden"} absolute top-[-2.5rem] md:top-[-26px] z-50 left-0 text-primary-500 w-full text-xs`}>You can compare only 3 colleges at a time. Remove one to add a new college.</p>
         </div>
 
         <input

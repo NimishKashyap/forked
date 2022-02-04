@@ -210,18 +210,29 @@ function StepTwo({ compare, setCompare }) {
               className="h-4 md:h-auto absolute top-[-0.9rem] md:top-0 right-0"
             />
           </div>{" "}
-          <div className="py-5 md:ml-[4rem]" onClick={() => handleCheck(10)}>
+          <div
+            className="hidden md:block py-5 md:ml-[4rem]"
+            onClick={() => handleCheck(10)}
+          >
             <button className="w-[100px] md:w-[150px] md:px-5 py-2 md:py-3 text-sm md:text-base rounded-lg text-dark-200 border-2 border-primary-500">
               Select all
             </button>
           </div>{" "}
         </div>
-        <button
-          onClick={() => handleCompare()}
-          className="mx-auto py-2 px-5 bg-primary-500 text-white rounded-md"
-        >
-          Compare
-        </button>
+        <div className="flex">
+          <button
+            onClick={() => handleCompare()}
+            className="md:hidden mx-auto py-2 px-5 border-2 border-primary-500 text-dark-500 rounded-md"
+          >
+            Select All
+          </button>
+          <button
+            onClick={() => handleCompare()}
+            className="mx-auto py-2 px-5 bg-primary-500 text-white rounded-md"
+          >
+            Compare
+          </button>
+        </div>
       </div>
     </div>
   );
