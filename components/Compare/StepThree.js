@@ -474,15 +474,15 @@ function StepThree({ compare, setCompare, stepOneState }) {
             <p className="bg-gray-100 md:bg-white md:border-b-2 text-dark-200 font-medium pb-2 col-span-2 md:col-span-1">
               Median Salary for Bachelor&apos;s Degree
             </p>
-            <p className="md:border-b-2 text-dark-500 text-center">$4.5 LPA</p>
+            <p className="md:border-b-2 text-dark-500 text-center"></p>
             <p className="md:border-b-2"></p>
-            <p className="hidden md:border-b-2"></p>
+            <p className="hidden md:block md:border-b-2"></p>
           </>
           <>
             <p className="bg-gray-100 md:bg-white md:border-b-2 text-dark-200 font-medium pb-2 col-span-2 md:col-span-1">Median Salary for Master&apos;s Degree</p>
-            <p className="md:border-b-2 text-dark-500 text-center">$4.5 LPA</p>
+            <p className="md:border-b-2 text-dark-500 text-center"></p>
             <p className="md:border-b-2"></p>
-            <p className="hidden md:border-b-2"></p>
+            <p className="hidden md:block md:border-b-2"></p>
           </>
         </div>
         <br />
@@ -534,7 +534,7 @@ function StepThree({ compare, setCompare, stepOneState }) {
             <p className="bg-gray-100 md:bg-white md:border-b-2 text-dark-200 font-medium pb-2 col-span-2 md:col-span-1">Bachelor&apos;s Degree</p>
             <p className="md:border-b-2 text-dark-500 text-center">5</p>
             <p className="md:border-b-2"></p>
-            <p className="hidden md:border-b-2"> </p>
+            <p className="hidden md:block md:border-b-2"> </p>
           </>
           <>
             <p className="bg-gray-100 md:bg-white md:border-b-2 text-dark-200 font-medium pb-2 col-span-2 md:col-span-1">Master&apos;s Degree</p>
