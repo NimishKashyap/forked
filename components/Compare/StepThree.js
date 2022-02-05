@@ -190,7 +190,7 @@ function StepThree({ compare, setCompare, stepOneState }) {
             <p className="bg-gray-100 md:bg-white md:border-b-2 text-dark-200 font-medium pb-2 col-span-2 md:col-span-1">
               Others
             </p>
-            <p className="md:border-b-2 text-dark-500 text-center">
+            <p className="bmd:order-b-2 text-dark-500 text-center">
               1 Outlook (2020)
             </p>
             <p className="md:border-b-2"> </p>
