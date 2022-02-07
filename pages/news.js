@@ -8,7 +8,7 @@ import NewsCard from "../components/NewsCard";
 import NewsComp from "../components/News/NewsComp";
 import ScrollView from "../components/ScrollView";
 
-function news() {
+function News() {
   const [index, setIndex] = useState(0);
   return (
     <>
@@ -58,4 +58,4 @@ function news() {
   );
 }
 
-export default news;
+export default News;
